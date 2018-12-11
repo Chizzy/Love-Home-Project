@@ -14,16 +14,26 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lovehome_project/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+=======
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lovehome_project/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-233">
+              <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+>>>>>>> 9a666b66015b40cd5022607011936b38dfff0d9b
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
@@ -33,6 +43,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> 9a666b66015b40cd5022607011936b38dfff0d9b
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -131,8 +143,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544555957315</updated>
+<<<<<<< HEAD
       <workItem from="1544555963878" duration="448000" />
       <workItem from="1544556726431" duration="241000" />
+=======
+      <workItem from="1544555963878" duration="689000" />
+>>>>>>> 9a666b66015b40cd5022607011936b38dfff0d9b
     </task>
     <servers />
   </component>
@@ -164,7 +180,11 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+<<<<<<< HEAD
       <window_info active="true" anchor="right" content_ui="combo" id="Project" order="5" visible="true" weight="0.2532189" />
+=======
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="5" visible="true" weight="0.20130932" />
+>>>>>>> 9a666b66015b40cd5022607011936b38dfff0d9b
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,15 +193,25 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1710">
           <caret line="114" selection-start-line="114" selection-end-line="114" />
+=======
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+>>>>>>> 9a666b66015b40cd5022607011936b38dfff0d9b
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lovehome_project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="105">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+=======
+        <state relative-caret-position="-233">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+>>>>>>> 9a666b66015b40cd5022607011936b38dfff0d9b
         </state>
       </provider>
     </entry>

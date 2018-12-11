@@ -1,0 +1,1 @@
+web: gunicorn lovehome_project.wsgi --log-file -
