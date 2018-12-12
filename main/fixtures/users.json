@@ -1,0 +1,42 @@
+[
+  {
+    "model": "main.user",
+    "fk": 1,
+    "fields": {
+      "name": "Kishi Bashi",
+      "email": "kishi@kishi.com",
+      "password": "USA",
+      "address": "343 Ponce De leon"
+      "city": "Atlanta",
+      "state": "GA",
+      "zip_code": "30303",
+      "phone_number": "555-555-5555",
+      "billing_address": "901 Shelby Drive",
+      "billing_city": "Atlanta",
+      "billing_state": "Georgia",
+      "billing_zip_code": "30300",
+      "cart": ""
+
+    }
+  },
+  {
+  "model": "main.user",
+    "fk": 2,
+    "fields": {
+      "name": "John Doe",
+      "email": "john@john.com",
+      "password": "USA",
+      "address": "441 North Highland Ave",
+      "city": "Augusta",
+      "state": "GA",
+      "zip_code": "30300",
+      "phone_number": "555-555-5555",
+      "billing_address": "441 North Highland Ave",
+      "billing_city": "Augusta",
+      "billing_state": "Georgia",
+      "billing_zip_code": "30300",
+      "cart": ""
+
+    }
+  }
+  ]
