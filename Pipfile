@@ -13,6 +13,12 @@ django-extensions = "*"
 djangorestframework = "*"
 gunicorn = "*"
 django-heroku = "*"
+django-allauth = "*"
+django-rest-auth = "*"
+django-cors-headers = "*"
+whitenoise = "*"
+requests = "*"
+oauthlib = "*"
 
 [requires]
 python_version = "3.7"
