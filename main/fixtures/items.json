@@ -185,10 +185,10 @@
     "fk": 16,
     "fields": {
       "type": "coffee table",
-      "name": "Marble side table",
+      "name": "Brass Coffee Table",
       "price": "250",
-      "description": "Marble, steel side table",
-      "image_url": "https://secure.img1-fg.wfcdn.com/im/27862920/resize-h800%5Ecompr-r85/4874/48743544/Katara+End+Table.jpg",
+      "description": "Brass and glass coffee table",
+      "image_url": "http://www.regomello.com/wp-content/uploads/2018/06/special-glam-coffee-table-unique-frequency.jpg",
       "category": "glam"
     }
   },
@@ -198,10 +198,10 @@
     "fields": {
       "type": "coffee table",
       "name": "Marble side table",
-      "price": "250",
-      "description": "Marble, steel side table",
-      "image_url": "https://secure.img1-fg.wfcdn.com/im/27862920/resize-h800%5Ecompr-r85/4874/48743544/Katara+End+Table.jpg",
-      "category": "glam"
+      "price": "400",
+      "description": "Modern Coffee Table",
+      "image_url": "https://cdn.freshome.com/wp-content/uploads/2016/01/EntuCoffeeTablePetrieAPF15.jpg",
+      "category": "modern"
     }
   },
     {
@@ -209,10 +209,82 @@
     "fk": 18,
     "fields": {
       "type": "coffee table",
-      "name": "Marble side table",
+      "name": "Black Minimalist Coffee Table",
       "price": "250",
-      "description": "Marble, steel side table",
-      "image_url": "https://secure.img1-fg.wfcdn.com/im/27862920/resize-h800%5Ecompr-r85/4874/48743544/Katara+End+Table.jpg",
+      "description": "Black steel minimalist coffee table",
+      "image_url": "https://cb2.scene7.com/is/image/CB2/MillCoffeeTableSHS16_16x9/?$web_zoom_furn_hero$&151221153025&wid=1008&hei=567",
+      "category": "minimalist"
+    }
+  },
+    {
+    "model": "main.item",
+    "fk": 19,
+    "fields": {
+      "type": "lamp",
+      "name": "Modern Steel Lamp",
+      "price": "80",
+      "description": "Small, steel lamp",
+      "image_url": "https://www.eurway.com/images/jordan-table-lamp.jpg?bw=75&bh=75",
+      "category": "modern"
+    }
+  },
+     {
+    "model": "main.item",
+    "fk": 20,
+    "fields": {
+      "type": "lamp",
+      "name": "Glam Table Lamp",
+      "price": "120",
+      "description": "Chrome, glam lamp",
+      "image_url": "https://target.scene7.com/is/image/Target/GUEST_18028fdc-8cb4-4e6e-acee-12f0488394e3?wid=488&hei=488&fmt=webp",
+      "category": "glam"
+    }
+  },
+     {
+    "model": "main.item",
+    "fk": 21,
+    "fields": {
+      "type": "lamp",
+      "name": "Minimalist Floor Lamp",
+      "price": "250",
+      "description": "Sleek, simple floor lamp",
+      "image_url": "https://image.lampsplus.com/is/image/cropped/42G85cropped.fpx?qlt=75&wid=236&hei=236&op_sharpen=1&resMode=sharp2&fmt=jpeg",
+      "category": "minimalist"
+    }
+  },
+   {
+    "model": "main.item",
+    "fk": 22,
+    "fields": {
+      "type": "rugs",
+      "name": "Modern Living Room Rug",
+      "price": "600",
+      "description": "Modern living room rug",
+      "image_url": "https://www.marniegoodfriend.com/wp-content/uploads/2018/08/Modern-Living-Room-Decor-Minimalist.jpg",
+      "category": "modern"
+    }
+  },
+   {
+    "model": "main.item",
+    "fk": 23,
+    "fields": {
+      "type": "rugs",
+      "name": "Abstract Rug",
+      "price": "1000",
+      "description": "Abstract living room rug",
+      "image_url": "https://previews.123rf.com/images/skdesign/skdesign1703/skdesign170300162/73206152-spacious-double-volume-living-room-interior-with-minimalist-sofas-and-rug-in-the-corner-in-front-of-.jpg",
+      "category": "modern"
+    }
+  },
+   {
+    "model": "main.item",
+    "fk": 24,
+    "fields": {
+      "type": "rugs",
+      "name": "Glam Shag Rug",
+      "price": "400",
+      "description": "Glam shag rug",
+      "image_url": "https://ak1.ostkcdn.com/images/products/7554877/P14986841.jpg?impolicy=medium",
       "category": "glam"
     }
   }
