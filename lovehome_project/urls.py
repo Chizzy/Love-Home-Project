@@ -16,14 +16,15 @@ Including another URLconf
 rom django.urls import path
 from django.conf.urls import include
 from django.contrib import admin
-from django.contrib.auth import views as auth_views
+from . import views
 
 urlpatterns = [
+
+    path('api-auth/', include('rest_framework.urls')),
+    path('rest-auth/', include('rest_auth.urls')),
+    path('rest-auth/registration/', include('rest_auth.registration.urls')),
     path('admin', admin.site.urls),
     path('', include('lovehome_project.urls')),
-    # add these 2:
-    path('#', #, #='#)
-    path('accounts/login/', auth_views.login, name='login'),
-    path('accounts/logout/', auth_views.logout, name='logout'),
+    url(r’ ^ $’, views.FrontendAppView.as_view())
 
 ]
