@@ -37,12 +37,20 @@ class NavbarTop extends Component {
               <div className="right">
                 <Link to="/AboutUs">About Us</Link>
                 <Link to="/ContactUs">Contact Us</Link>
-                <Link to="/#">INSTAGRAMICON</Link>
-                <div className="booknow">
-                    <Link to="#">TWITTERICON</Link>
+                <div className="instagramlogo">
+                <img height="20" src="https://tighestimepieces.com/wp-content/uploads/2016/11/Instagram-icon-WHITE-300x300.png"/>
                 </div>
-                <Link to="#">FACEBOOKICON</Link>
-              </div>
+                <div className="facebooklogo">
+                <img height="20" src="https://tighestimepieces.com/wp-content/uploads/2016/11/Facebook-icon-WHITE-300x300.png"/>
+                </div>
+                <div className="twitterlogo">
+                <img height="20" src="https://tighestimepieces.com/wp-content/uploads/2016/11/Twitter-icon-circle-logo-WHITE-300x300.png"/>
+                </div>
+                <div className="pinterestlogo">
+                <img height="20" src="https://www.freeiconspng.com/uploads/white-pinterest-logo-png--30.png"/>
+                </div>
+                
+                </div>
             </NavBarStyles>
           </div>
         );
