@@ -38,12 +38,19 @@ class App extends Component {
       {/* //these are the paths on the url in the addressbar and they dictate what the user will see */}
       
       <Route exact path='/' component={HomePage} />
-      {/* <Route exact path='/users/:userId/newpikmin' component={NewPikmin} /> 
+      <Route exact path='/AboutUsPage' component={AboutUsPage} /> 
+      <Route exact path='/ContactUsPage' component={ContactUsPage} />
+      <Route exact path='/DesignServicesPage' component={DesignServicesPage} />
+      <Route exact path='/OrderConfirmationPage' component={OrderConfirmationPage} />
+      <Route exact path='/OrderReviewPage' component={OrderReviewPage} />
+      <Route exact path='/ProfilePage' component={ProfilePage} />
+      <Route exact path='/ShoppingCartPage' component={ShoppingCartPage} />
+      <Route exact path='/StorePage' component={StorePage} />
       <Route exact path='/users/:id' component={UserPage} />
       <Route exact path="/users/:userId/edit" component={EditUser} />
       <Route exact path='/signup' component={SignUp} />
       <Route exact path='/users/:userId/pikmin' component={Pikmin} />
-     */}
+    
       </Switch>
       </Router>
      

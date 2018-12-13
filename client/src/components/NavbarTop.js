@@ -12,13 +12,13 @@ const NavBarStyles = styled.div`
   width: 100%;
   height: 10vh;
   font-size: 1rem;
-  background-color: whitesmoke;
-  font-family: 'montserat';
-  text-transform: uppercase;
+  background-color: #398274;
+  // font-family: 'montserat';
+  // text-transform: uppercase;
   a {
     text-decoration: none;
     padding-left: 2vw;
-    color: grey;
+    color: whitesmoke;
     &:hover {
       color: red;
     }
@@ -40,14 +40,14 @@ class NavbarTop extends Component {
             <div>
             <NavBarStyles>
               <div className="right">
-                <Link to="/aboutus">Design Services</Link>
-                <Link to="/howitworks">Shop</Link>
-                <Link to="/blog">My Profile</Link>
+                <Link to="/designservicespage">Design Services</Link>
+                <Link to="/storepage">Shop</Link>
+                <Link to="/profilepage">My Profile</Link>
                 
                 <div>
                 <i class="fas fa-shopping-cart"></i>
                 </div>
-                <Link to="/">
+                <Link to="/shoppingcartpage">
                 
                 <FontAwesomeIcon icon={faShoppingCart} />
 

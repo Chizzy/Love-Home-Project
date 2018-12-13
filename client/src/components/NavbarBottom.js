@@ -9,13 +9,13 @@ const NavBarStyles = styled.div`
   width: 100%;
   height: 10vh;
   font-size: 1rem;
-  background-color: whitesmoke;
-  font-family: 'montserat';
-  text-transform: uppercase;
+  background-color: #888c8f;
+  // font-family: 'montserat';
+  // text-transform: uppercase;
   a {
     text-decoration: none;
     padding-left: 2vw;
-    color: grey;
+    color: whitesmoke;
     &:hover {
       color: red;
     }
