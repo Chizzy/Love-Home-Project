@@ -43,7 +43,7 @@ class NavbarTop extends Component {
             <div>
             <div className="logo">
             <center>
-            <img height="50" src="images/logo.png"/>
+            <img height="100" src="images/logo.png"/>
             </center>
                 
               </div>

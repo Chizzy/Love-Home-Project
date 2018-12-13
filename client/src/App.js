@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NavbarTop from './components/NavbarTop';
 import NavbarBottom from './components/NavbarBottom';
 import AboutUsPage from './components/AboutUsPage'
@@ -27,32 +27,33 @@ class App extends Component {
         <header>
         </header>
         <Router>
-<Switch>
-<p>
-          <NavbarTop/>
-          THIS IS THE APP.JS PAGE
-          <img src="https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1574&q=80" alt=""/>    
+          <Switch>
+            <p>
+              <NavbarTop />
+              THIS IS THE APP.JS PAGE
+          {/* <img src="https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1574&q=80" alt=""/>    
+             */}
+
+              <NavbarBottom />
+            </p>
+
+
+            {/* //these are the paths on the url in the addressbar and they dictate what the user will see */}
+
             
-          
-          <NavbarBottom/>
-          </p>
-          
-      
-      {/* //these are the paths on the url in the addressbar and they dictate what the user will see */}
-      
-      <Route exact path='/' component={HomePage} />
-      <Route exact path='/AboutUsPage' component={AboutUsPage} /> 
-      <Route exact path='/ContactUsPage' component={ContactUsPage} />
-      <Route exact path='/DesignServicesPage' component={DesignServicesPage} />
-      <Route exact path='/OrderConfirmationPage' component={OrderConfirmationPage} />
-      <Route exact path='/OrderReviewPage' component={OrderReviewPage} />
-      <Route exact path='/ProfilePage' component={ProfilePage} />
-      <Route exact path='/ShoppingCartPage' component={ShoppingCartPage} />
-      <Route exact path='/StorePage' component={StorePage} />
-       
-      </Switch>
-      </Router>
-     
+            <Route exact path='/AboutUsPage' component={AboutUsPage} />
+            <Route exact path='/ContactUsPage' component={ContactUsPage} />
+            <Route exact path='/DesignServicesPage' component={DesignServicesPage} />
+            <Route exact path='/OrderConfirmationPage' component={OrderConfirmationPage} />
+            <Route exact path='/OrderReviewPage' component={OrderReviewPage} />
+            <Route exact path='/ProfilePage' component={ProfilePage} />
+            <Route exact path='/ShoppingCartPage' component={ShoppingCartPage} />
+            <Route exact path='/StorePage' component={StorePage} />
+            <Route exact path='/' component={HomePage} />
+
+          </Switch>
+        </Router>
+
       </div>
     );
   }
