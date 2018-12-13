@@ -41,17 +41,17 @@ class NormalLoginForm extends React.Component {
                         <Form onSubmit={this.handleSubmit} className="login-form">
 
                             <FormItem>
-                                {getFieldDecorator('userName', {
-                                    rules: [{required: true, message: 'Please input your username!'}],
+                                {getFieldDecorator('email', {
+                                    rules: [{required: true, message: 'Please input your email address!!'}],
                                 })(
-                                    <Input prefix={<Icon type="user" style={{color: 'rgba(0,0,0,.25)'}}/>}
-                                           placeholder="Username"/>
+                                    <Input prefix={<Icon type="mail" style={{color: 'rgba(0,0,0,.25)'}}/>}
+                                           placeholder="Email"/>
                                 )}
                             </FormItem>
 
                             <FormItem>
                                 {getFieldDecorator('password', {
-                                    rules: [{required: true, message: 'Please input your Password!'}],
+                                    rules: [{required: true, message: 'Please input your password!'}],
                                 })(
                                     <Input prefix={<Icon type="lock" style={{color: 'rgba(0,0,0,.25)'}}/>}
                                            type="password" placeholder="Password"/>
@@ -86,7 +86,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onAuth: (username, password) => dispatch(actions.authLogin(username, password))
+        onAuth: (email, password) => dispatch(actions.authLogin(email, password))
     }
 }
 
