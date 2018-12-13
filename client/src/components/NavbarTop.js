@@ -23,8 +23,11 @@ const NavBarStyles = styled.div`
       color: red;
     }
   }
-  .left {
-    width: 55vw;
+  .logo {
+    background-color: red;
+    width: 45vw;
+    display: flex;
+    align-items: center;
   }
   .right {
     margin-right: 2vw;
@@ -38,7 +41,15 @@ class NavbarTop extends Component {
     render() {
         return (
             <div>
+            <div className="logo">
+            <center>
+            <img height="50" src="images/logo.png"/>
+            </center>
+                
+              </div>
+            
             <NavBarStyles>
+            
               <div className="right">
                 <Link to="/designservicespage">Design Services</Link>
                 <Link to="/storepage">Shop</Link>

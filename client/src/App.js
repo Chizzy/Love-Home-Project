@@ -30,7 +30,11 @@ class App extends Component {
 <Switch>
 <p>
           <NavbarTop/>
-          THIS IS THE APP.JS PAGE<NavbarBottom/>
+          THIS IS THE APP.JS PAGE
+          <img src="https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1574&q=80" alt=""/>    
+            
+          
+          <NavbarBottom/>
           </p>
           
       
