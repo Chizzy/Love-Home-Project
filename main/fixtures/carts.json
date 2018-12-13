@@ -1,0 +1,20 @@
+[
+    {
+    "model": "cart.category",
+    "fk": 1,
+    "fields": {
+      "total": 400,
+      "quantity": 3,
+      "items": [2, 15, 20]
+    }
+  },
+  {
+    "model": "cart.category",
+    "fk": 2,
+    "fields": {
+      "total": 2450,
+      "quantity": 3,
+      "items": [5, 12, 21]
+    }
+  }
+]
