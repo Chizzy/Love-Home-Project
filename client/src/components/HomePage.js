@@ -1,6 +1,27 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 
+const PhotoCarouselStyles = styled.div`
+  .cards-slider {
+      position: relative;
+      max-width: 226px;
+      margin: 0 auto;
+
+  &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 264px;
+      outline: 5px solid #61DAFE;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }    
+  }
+
+`;
+
+
 class HomePage extends Component {
     render() {
         return (
@@ -11,6 +32,20 @@ class HomePage extends Component {
             <img width="100%" src="http://i65.tinypic.com/jue15u.png" alt=""/>
             <h1>Check out our Instagram inspiration feed!</h1>
             
+
+{/* This is the code for the photocarousel for "instagram" */}
+<PhotoCarouselStyles>
+<div className="cards-slider">
+  <div className="cards-slider-wrapper">
+  <Card property={property} />
+</div>
+</div>
+</PhotoCarouselStyles>
+
+
+
+
+
             </div>
             
             );

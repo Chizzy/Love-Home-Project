@@ -30,10 +30,6 @@ class App extends Component {
           <div>
             <p>
               <NavbarTop />
-          {/* <img src="https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1574&q=80" alt=""/>    
-             */}
-{/* This is the code for the photocarousel for "instagram" */}
-
 
 
 
