@@ -27,31 +27,31 @@ class App extends Component {
         <header>
         </header>
         <Router>
-          <Switch>
+          <div>
             <p>
               <NavbarTop />
-              THIS IS THE APP.JS PAGE
           {/* <img src="https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1574&q=80" alt=""/>    
              */}
 
               <NavbarBottom />
             </p>
-
+          
 
             {/* //these are the paths on the url in the addressbar and they dictate what the user will see */}
 
-            
-            <Route exact path='/AboutUsPage' component={AboutUsPage} />
-            <Route exact path='/ContactUsPage' component={ContactUsPage} />
-            <Route exact path='/DesignServicesPage' component={DesignServicesPage} />
-            <Route exact path='/OrderConfirmationPage' component={OrderConfirmationPage} />
-            <Route exact path='/OrderReviewPage' component={OrderReviewPage} />
-            <Route exact path='/ProfilePage' component={ProfilePage} />
-            <Route exact path='/ShoppingCartPage' component={ShoppingCartPage} />
-            <Route exact path='/StorePage' component={StorePage} />
+            <Switch>
+            <Route path='/AboutUsPage' component={AboutUsPage} />
+            <Route path='/ContactUsPage' component={ContactUsPage} />
+            <Route path='/DesignServicesPage' component={DesignServicesPage} />
+            <Route path='/OrderConfirmationPage' component={OrderConfirmationPage} />
+            <Route path='/OrderReviewPage' component={OrderReviewPage} />
+            <Route path='/ProfilePage' component={ProfilePage} />
+            <Route path='/ShoppingCartPage' component={ShoppingCartPage} />
+            <Route path='/StorePage' component={StorePage} />
             <Route exact path='/' component={HomePage} />
 
           </Switch>
+          </div>
         </Router>
 
       </div>
