@@ -1,5 +1,12 @@
 from django.db import models
 
+class Category(models.Model):
+    name = models.CharField(max_length=255)
+    description = models.TextField()
+
+    def __str__(self):
+        return self.name
+
 
 class Item(models.Model):
     type = models.CharField(max_length=255)
@@ -7,15 +14,7 @@ class Item(models.Model):
     price = models.IntegerField()
     description = models.TextField()
     image_url = models.TextField()
-
-    def __str__(self):
-        return self.name
-
-
-class Category(models.Model):
-    name = models.CharField(max_length=255)
-    description = models.TextField()
-    items = models.ForeignKey(Item, on_delete=models.CASCADE, related_name='category')
+    category = models.ForeignKey(Category,  on_delete=models.CASCADE, default=1, related_name='items')
 
     def __str__(self):
         return self.name
@@ -24,7 +23,7 @@ class Category(models.Model):
 class Cart(models.Model):
     total = models.CharField(max_length=255)
     quantity = models.CharField(max_length=255)
-    items = models.ForeignKey(Item, on_delete=models.CASCADE, related_name='cart')
+    items = models.ManyToManyField(Item, blank=True, null=True, related_name='cart')
 
     def __str__(self):
         return self.total
@@ -32,7 +31,7 @@ class Cart(models.Model):
 
 class User(models.Model):
     name = models.CharField(max_length=255)
-    email = models.EmailField(max_lentgh=255)
+    email = models.EmailField(max_length=255)
     password = models.CharField(max_length=255)
     address = models.CharField(max_length=255)
     city = models.CharField(max_length=255)

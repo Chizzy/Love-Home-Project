@@ -71,7 +71,7 @@
       "category": 3
     }
   },
-    {
+  {
     "model": "main.item",
     "fk": 7,
     "fields": {
@@ -83,7 +83,7 @@
       "category": 1
     }
   },
-     {
+  {
     "model": "main.item",
     "fk": 8,
     "fields": {
@@ -95,8 +95,7 @@
       "category": 3
     }
   },
-
-         {
+  {
     "model": "main.item",
     "fk": 9,
     "fields": {
@@ -108,7 +107,7 @@
       "category": 2
     }
   },
-         {
+  {
     "model": "main.item",
     "fk": 10,
     "fields": {
@@ -120,7 +119,7 @@
       "category": 1
     }
   },
-           {
+  {
     "model": "main.item",
     "fk": 11,
     "fields": {
@@ -132,7 +131,7 @@
       "category": 2
     }
   },
-             {
+  {
     "model": "main.item",
     "fk": 12,
     "fields": {
@@ -144,7 +143,7 @@
       "category": 3
     }
   },
-               {
+  {
     "model": "main.item",
     "fk": 13,
     "fields": {
@@ -156,7 +155,7 @@
       "category": 3
     }
   },
-               {
+  {
     "model": "main.item",
     "fk": 14,
     "fields": {
@@ -168,7 +167,7 @@
       "category": 1
     }
   },
-               {
+  {
     "model": "main.item",
     "fk": 15,
     "fields": {
@@ -192,7 +191,7 @@
       "category": 2
     }
   },
-    {
+  {
     "model": "main.item",
     "fk": 17,
     "fields": {
@@ -204,7 +203,7 @@
       "category": 1
     }
   },
-    {
+  {
     "model": "main.item",
     "fk": 18,
     "fields": {
@@ -216,7 +215,7 @@
       "category": 3
     }
   },
-    {
+  {
     "model": "main.item",
     "fk": 19,
     "fields": {
@@ -228,7 +227,7 @@
       "category": 1
     }
   },
-     {
+  {
     "model": "main.item",
     "fk": 20,
     "fields": {
@@ -240,7 +239,7 @@
       "category": 2
     }
   },
-     {
+  {
     "model": "main.item",
     "fk": 21,
     "fields": {
@@ -252,7 +251,7 @@
       "category": 3
     }
   },
-   {
+  {
     "model": "main.item",
     "fk": 22,
     "fields": {
@@ -264,7 +263,7 @@
       "category": 1
     }
   },
-   {
+  {
     "model": "main.item",
     "fk": 23,
     "fields": {
@@ -276,7 +275,7 @@
       "category": 1
     }
   },
-   {
+  {
     "model": "main.item",
     "fk": 24,
     "fields": {
