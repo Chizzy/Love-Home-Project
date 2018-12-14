@@ -1,6 +1,6 @@
 [
     {
-    "model": "cart.category",
+    "model": "main.cart",
     "fk": 1,
     "fields": {
       "total": 400,
@@ -9,7 +9,7 @@
     }
   },
   {
-    "model": "cart.category",
+    "model": "main.cart",
     "fk": 2,
     "fields": {
       "total": 2450,
