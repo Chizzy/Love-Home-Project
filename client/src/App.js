@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import NavbarTop from './components/NavbarTop';
 import NavbarBottom from './components/NavbarBottom';
@@ -40,14 +39,14 @@ class App extends Component {
             {/* //these are the paths on the url in the addressbar and they dictate what the user will see */}
 
             <Switch>
-            <Route path='/AboutUsPage' component={AboutUsPage} />
-            <Route path='/ContactUsPage' component={ContactUsPage} />
-            <Route path='/DesignServicesPage' component={DesignServicesPage} />
-            <Route path='/OrderConfirmationPage' component={OrderConfirmationPage} />
-            <Route path='/OrderReviewPage' component={OrderReviewPage} />
-            <Route path='/ProfilePage' component={ProfilePage} />
-            <Route path='/ShoppingCartPage' component={ShoppingCartPage} />
-            <Route path='/StorePage' component={StorePage} />
+            <Route path='/about-us' component={AboutUsPage} />
+            <Route path='/contact-us' component={ContactUsPage} />
+            <Route path='/design-services' component={DesignServicesPage} />
+            <Route path='/order-confirmation' component={OrderConfirmationPage} />
+            <Route path='/order-review' component={OrderReviewPage} />
+            <Route path='/profile' component={ProfilePage} />
+            <Route path='/shopping-cart' component={ShoppingCartPage} />
+            <Route path='/store' component={StorePage} />
             <Route exact path='/' component={HomePage} />
 
           </Switch>

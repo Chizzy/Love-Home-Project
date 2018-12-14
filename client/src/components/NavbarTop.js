@@ -51,14 +51,14 @@ class NavbarTop extends Component {
             <NavBarStyles>
             
               <div className="right">
-                <Link to="/designservicespage">Design Services</Link>
-                <Link to="/storepage">Shop</Link>
-                <Link to="/profilepage">My Profile</Link>
+                <Link to="/design-services">Design Services</Link>
+                <Link to="/store">Shop</Link>
+                <Link to="/profile">Profile</Link>
                 
                 <div>
                 <i class="fas fa-shopping-cart"></i>
                 </div>
-                <Link to="/shoppingcartpage">
+                <Link to="/shopping-cart">
                 
                 <FontAwesomeIcon icon={faShoppingCart} />
 
