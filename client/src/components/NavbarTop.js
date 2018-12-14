@@ -18,9 +18,9 @@ const NavBarStyles = styled.div`
   a {
     text-decoration: none;
     padding-left: 2vw;
-    color: whitesmoke;
+    color: white;
     &:hover {
-      color: red;
+      color: whitesmoke;
     }
   }
   .logo {
@@ -43,7 +43,7 @@ class NavbarTop extends Component {
             <div>
             <div className="logo">
             <center>
-            <img height="100" src="images/logo.png"/>
+            <img height="100" src="images/logo.png" alt="#"/>
             </center>
                 
               </div>
