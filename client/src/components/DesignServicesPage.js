@@ -12,14 +12,14 @@ class DesignServicesPage extends Component {
                     <PricingDetail> <b>✓</b> Unlimited revisions: Send feedback to the Love Home team</PricingDetail>
                     <PricingDetail> <b>✓</b> Designs delivered in 10-14 days</PricingDetail>
                 </PricingSlot>
-                <PricingSlot onClick={this.submit} buttonText='SIGN UP' title='Love Home Plus' priceText='$79/room'>
+                <PricingSlot highlighted onClick={this.submit} buttonText='SIGN UP' title='Love Home Plus' priceText='$79/room'>
                     <PricingDetail> <b>✓</b> Love Home builds your room in 3D</PricingDetail>
                     <PricingDetail> <b>✓</b> Concierge shopping service</PricingDetail>
                     <PricingDetail> <b>✓</b> Designs delivered in 7-10 days</PricingDetail>
                     <PricingDetail> <b>✓</b><b> Exclusive Discounts:</b> Access to exclusive discounts and shopping
                         perks</PricingDetail>
                 </PricingSlot>
-                <PricingSlot highlighted onClick={this.submit} buttonText='SIGN UP' title='Love Home Plus'
+                <PricingSlot highlighted onClick={this.submit} buttonText='SIGN UP' title='Love Home Premium'
                              priceText='$169/room'>
                     <PricingDetail> <b>✓</b> Love Home builds your room in 3D</PricingDetail>
                     <PricingDetail> <b>✓</b> Concierge shopping service</PricingDetail>
