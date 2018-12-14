@@ -1,6 +1,5 @@
 from rest_framework import viewsets
-
-from .serializers import UserSerializer, CategorySerializer, ItemSerializer, CartSerializer
+from .serializer import UserSerializer, CategorySerializer, ItemSerializer, CartSerializer
 from .models import User, Cart, Item, Category
 
 

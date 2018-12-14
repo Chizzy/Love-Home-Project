@@ -4,11 +4,11 @@
     "fk": 1,
     "fields": {
       "type": "pillow",
-      "name": "glam pillow",
+      "name": "gold rectangle modern designed pillow",
       "price": "30",
-      "description": "A shiny, silky pillow",
-      "image_url": "Atlanta",
-      "category": ""
+      "description": "Modern gold pattern designed pillow",
+      "image_url": "https://s7d4.scene7.com/is/image/roomandboard/774226?$prodzoom0$&size=498,400&scl=1",
+      "category": 1
     }
   },
   {
@@ -17,10 +17,10 @@
     "fields": {
       "type": "pillow",
       "name": "fluffy pillow",
-      "price": "20",
+      "price": "30",
       "description": "A very soft, fluffy pillow",
-      "image_url": "Atlanta",
-      "category": ""
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/41qduvMWsKL._US500_.jpg",
+      "category": 2
     }
   },
   {
@@ -30,9 +30,9 @@
       "type": "pillow",
       "name": "triangle pillow",
       "price": "25",
-      "description": "A triangle shaped pillow",
-      "image_url": "Atlanta",
-      "category": "GA"
+      "description": "Brown, corduroy, triangle shaped pillow",
+      "image_url": "https://images-na.ssl-images-amazon.com/images/I/71tnxxnk55L._SX425_.jpg",
+      "category": 1
     }
   },
   {
@@ -44,7 +44,7 @@
       "price": "1200",
       "description": "Franklin Loveseat",
       "image_url": "https://joybird2.imgix.net/image_970_109.jpg?",
-      "category": "GA"
+      "category": 1
     }
   },
   {
@@ -56,7 +56,7 @@
       "price": "1600",
       "description": "Monroe Loveseat",
       "image_url": "https://joybird2.imgix.net/image_9627_109.jpg?",
-      "category": "GA"
+      "category": 3
     }
   },
   {
@@ -68,10 +68,10 @@
       "price": "2000",
       "description": "Bryant Loveseat",
       "image_url": "https://joybird2.imgix.net/image_8291_109.jpg?",
-      "category": "GA"
+      "category": 3
     }
   },
-    {
+  {
     "model": "main.item",
     "fk": 7,
     "fields": {
@@ -80,10 +80,10 @@
       "price": "3000",
       "description": "Gray L-shaped sofa",
       "image_url": "http://hilariwilliams.co/wp-content/uploads/2018/07/comfortable-modern-sofa-new-and-very-sofas-design-bed-uk.jpg",
-      "category": "Modern"
+      "category": 1
     }
   },
-     {
+  {
     "model": "main.item",
     "fk": 8,
     "fields": {
@@ -92,11 +92,10 @@
       "price": "2000",
       "description": "Bryant Loveseat",
       "image_url": "https://cdn.trendhunterstatic.com/thumbs/minimalist-sofa.jpeg",
-      "category": "Minamilist"
+      "category": 3
     }
   },
-
-         {
+  {
     "model": "main.item",
     "fk": 9,
     "fields": {
@@ -105,10 +104,10 @@
       "price": "2400",
       "description": "Curved tufted sofa",
       "image_url": "http://www.hautehousehome.com/images/Product/large/179.jpg",
-      "category": "Glam"
+      "category": 2
     }
   },
-         {
+  {
     "model": "main.item",
     "fk": 10,
     "fields": {
@@ -117,10 +116,10 @@
       "price": "700",
       "description": "Walnut felt grey chair",
       "image_url": "data:image/webp;base64,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",
-      "category": "Modern"
+      "category": 1
     }
   },
-           {
+  {
     "model": "main.item",
     "fk": 11,
     "fields": {
@@ -129,10 +128,10 @@
       "price": "2400",
       "description": "Curved tufted sofa",
       "image_url": "https://secure.img1-fg.wfcdn.com/im/76906106/resize-h800%5Ecompr-r85/4119/41191001/Creeves+Barrel+Chair.jpg",
-      "category": "Glam"
+      "category": 2
     }
   },
-             {
+  {
     "model": "main.item",
     "fk": 12,
     "fields": {
@@ -141,10 +140,10 @@
       "price": "600",
       "description": "Curved tufted sofa",
       "image_url": "https://secure.img1-fg.wfcdn.com/im/37979018/resize-h800%5Ecompr-r85/2872/28725786/Belz+Armchair.jpg",
-      "category": "minimalist"
+      "category": 3
     }
   },
-               {
+  {
     "model": "main.item",
     "fk": 13,
     "fields": {
@@ -153,10 +152,10 @@
       "price": "300",
       "description": "Modern Minimalist Side Table",
       "image_url": "https://ae01.alicdn.com/kf/HTB1cbJmKXXXXXXMXVXXq6xXFXXXu/Cheap-office-modern-minimalist-living-room-coffee-table-fashion-simple-small-apartment-squares-moving-side-table.jpg_640x640.jpg",
-      "category": "minimalist"
+      "category": 3
     }
   },
-               {
+  {
     "model": "main.item",
     "fk": 14,
     "fields": {
@@ -165,10 +164,10 @@
       "price": "200",
       "description": "Modern wooden side table",
       "image_url": "http://michalchovanec.com/wp-content/uploads/2018/03/new-narrow-side-tables-for-living-room-intended-small-designs-3.jpg",
-      "category": "modern"
+      "category": 1
     }
   },
-               {
+  {
     "model": "main.item",
     "fk": 15,
     "fields": {
@@ -177,7 +176,7 @@
       "price": "250",
       "description": "Marble, steel side table",
       "image_url": "https://secure.img1-fg.wfcdn.com/im/27862920/resize-h800%5Ecompr-r85/4874/48743544/Katara+End+Table.jpg",
-      "category": "glam"
+      "category": 2
     }
   },
   {
@@ -185,35 +184,107 @@
     "fk": 16,
     "fields": {
       "type": "coffee table",
-      "name": "Marble side table",
+      "name": "Brass Coffee Table",
       "price": "250",
-      "description": "Marble, steel side table",
-      "image_url": "https://secure.img1-fg.wfcdn.com/im/27862920/resize-h800%5Ecompr-r85/4874/48743544/Katara+End+Table.jpg",
-      "category": "glam"
+      "description": "Brass and glass coffee table",
+      "image_url": "http://www.regomello.com/wp-content/uploads/2018/06/special-glam-coffee-table-unique-frequency.jpg",
+      "category": 2
     }
   },
-    {
+  {
     "model": "main.item",
     "fk": 17,
     "fields": {
       "type": "coffee table",
       "name": "Marble side table",
-      "price": "250",
-      "description": "Marble, steel side table",
-      "image_url": "https://secure.img1-fg.wfcdn.com/im/27862920/resize-h800%5Ecompr-r85/4874/48743544/Katara+End+Table.jpg",
-      "category": "glam"
+      "price": "400",
+      "description": "Modern Coffee Table",
+      "image_url": "https://cdn.freshome.com/wp-content/uploads/2016/01/EntuCoffeeTablePetrieAPF15.jpg",
+      "category": 1
     }
   },
-    {
+  {
     "model": "main.item",
     "fk": 18,
     "fields": {
       "type": "coffee table",
-      "name": "Marble side table",
+      "name": "Black Minimalist Coffee Table",
       "price": "250",
-      "description": "Marble, steel side table",
-      "image_url": "https://secure.img1-fg.wfcdn.com/im/27862920/resize-h800%5Ecompr-r85/4874/48743544/Katara+End+Table.jpg",
-      "category": "glam"
+      "description": "Black steel minimalist coffee table",
+      "image_url": "https://cb2.scene7.com/is/image/CB2/MillCoffeeTableSHS16_16x9/?$web_zoom_furn_hero$&151221153025&wid=1008&hei=567",
+      "category": 3
+    }
+  },
+  {
+    "model": "main.item",
+    "fk": 19,
+    "fields": {
+      "type": "lamp",
+      "name": "Modern Steel Lamp",
+      "price": "80",
+      "description": "Small, steel lamp",
+      "image_url": "https://www.eurway.com/images/jordan-table-lamp.jpg?bw=75&bh=75",
+      "category": 1
+    }
+  },
+  {
+    "model": "main.item",
+    "fk": 20,
+    "fields": {
+      "type": "lamp",
+      "name": "Glam Table Lamp",
+      "price": "120",
+      "description": "Chrome, glam lamp",
+      "image_url": "https://target.scene7.com/is/image/Target/GUEST_18028fdc-8cb4-4e6e-acee-12f0488394e3?wid=488&hei=488&fmt=webp",
+      "category": 2
+    }
+  },
+  {
+    "model": "main.item",
+    "fk": 21,
+    "fields": {
+      "type": "lamp",
+      "name": "Minimalist Floor Lamp",
+      "price": "250",
+      "description": "Sleek, simple floor lamp",
+      "image_url": "https://image.lampsplus.com/is/image/cropped/42G85cropped.fpx?qlt=75&wid=236&hei=236&op_sharpen=1&resMode=sharp2&fmt=jpeg",
+      "category": 3
+    }
+  },
+  {
+    "model": "main.item",
+    "fk": 22,
+    "fields": {
+      "type": "rugs",
+      "name": "Modern Living Room Rug",
+      "price": "600",
+      "description": "Modern living room rug",
+      "image_url": "https://www.marniegoodfriend.com/wp-content/uploads/2018/08/Modern-Living-Room-Decor-Minimalist.jpg",
+      "category": 1
+    }
+  },
+  {
+    "model": "main.item",
+    "fk": 23,
+    "fields": {
+      "type": "rugs",
+      "name": "Abstract Rug",
+      "price": "1000",
+      "description": "Abstract living room rug",
+      "image_url": "https://previews.123rf.com/images/skdesign/skdesign1703/skdesign170300162/73206152-spacious-double-volume-living-room-interior-with-minimalist-sofas-and-rug-in-the-corner-in-front-of-.jpg",
+      "category": 1
+    }
+  },
+  {
+    "model": "main.item",
+    "fk": 24,
+    "fields": {
+      "type": "rugs",
+      "name": "Glam Shag Rug",
+      "price": "400",
+      "description": "Glam shag rug",
+      "image_url": "https://ak1.ostkcdn.com/images/products/7554877/P14986841.jpg?impolicy=medium",
+      "category": 2
     }
   }
 ]
