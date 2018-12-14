@@ -1,10 +1,12 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import {PricingTable, PricingSlot, PricingDetail} from 'react-pricing-table'
 import NavbarTop from './components/NavbarTop';
 import NavbarBottom from './components/NavbarBottom';
 import AboutUsPage from './components/AboutUsPage'
 import ContactUsPage from './components/ContactUsPage'
+import AboutMePage from './components/AboutMePage';
 import DesignServicesPage from './components/DesignServicesPage'
 import HomePage from './components/HomePage'
 import OrderConfirmationPage from './components/OrderConfirmationPage'
@@ -43,6 +45,7 @@ class App extends Component {
             <Route path='/AboutUsPage' component={AboutUsPage} />
             <Route path='/ContactUsPage' component={ContactUsPage} />
             <Route path='/DesignServicesPage' component={DesignServicesPage} />
+            <Route path='/AboutMePage' component={AboutMePage} />
             <Route path='/OrderConfirmationPage' component={OrderConfirmationPage} />
             <Route path='/OrderReviewPage' component={OrderReviewPage} />
             <Route path='/ProfilePage' component={ProfilePage} />
@@ -53,7 +56,6 @@ class App extends Component {
           </Switch>
           </div>
         </Router>
-
       </div>
     );
     }
