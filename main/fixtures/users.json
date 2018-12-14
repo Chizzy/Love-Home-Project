@@ -6,7 +6,7 @@
       "name": "Kishi Bashi",
       "email": "kishi@kishi.com",
       "password": "USA",
-      "address": "343 Ponce De leon"
+      "address": "343 Ponce De leon",
       "city": "Atlanta",
       "state": "GA",
       "zip_code": "30303",
@@ -15,7 +15,7 @@
       "billing_city": "Atlanta",
       "billing_state": "Georgia",
       "billing_zip_code": "30300",
-      "cart": ""
+      "cart": 1
 
     }
   },
@@ -35,7 +35,7 @@
       "billing_city": "Augusta",
       "billing_state": "Georgia",
       "billing_zip_code": "30300",
-      "cart": ""
+      "cart": 2
 
     }
   }
