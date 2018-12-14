@@ -1,31 +1,33 @@
 import React, {Component} from 'react';
+import './ContactUsPage.css'
 
 class ContactUsPage extends Component {
     render() {
         return (
-            < div>
-                <form>
-                    <label>
-                        Name:
-                    </label>
-                    <input type="text" name="name"/>
+  <div id="form-main">
+  <div id="form-div">
+    <form className="form" id="form1">
 
-                    <label>
-                        E-mail:
-                    </label>
-                    <input type="text" name="email"/>
+      <p className="name">
+        <input name="name" type="text" className="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+      </p>
 
-                    <label>
-                        Message:
-                    </label>
-                    <input type="text" name="message"/>
+      <p className="email">
+        <input name="email" type="text" className="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
 
-
-                    <input type="submit" value="Submit"/>
+      <p className="text">
+        <textarea name="text" className="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+      </p>
 
 
-                </form>
-            </div>
+      <div className="submit">
+        <input type="submit" value="SEND" id="button-green"/>
+        <div className="ease"></div>
+      </div>
+    </form>
+  </div>
+  </div>
         )
             ;
     }
