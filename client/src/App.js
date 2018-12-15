@@ -35,7 +35,7 @@ class App extends Component {
 
 
 
-              <NavbarBottom />
+              
             </p>
           
 
@@ -53,6 +53,7 @@ class App extends Component {
             <Route exact path='/' component={HomePage} />
 
           </Switch>
+          <NavbarBottom />
           </div>
         </Router>
 

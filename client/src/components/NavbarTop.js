@@ -29,12 +29,13 @@ const NavBarStyles = styled.div`
     align-items: center;
   }
   .right {
+    display: flex;
     margin-right: 2vw;
     width: 45vw;
     display: flex;
     justify-content: space-around;
   }
-`;
+`
 
 class NavbarTop extends Component {
     render() {
