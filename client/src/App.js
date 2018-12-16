@@ -12,6 +12,7 @@ import OrderReviewPage from './components/OrderReviewPage'
 import ProfilePage from './components/ProfilePage'
 import ShoppingCartPage from './components/ShoppingCartPage'
 import StorePage from './components/StorePage'
+import NewNavTop from './components/NewNavTop'
 
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -30,6 +31,7 @@ class App extends Component {
           <div>
             <p>
               <NavbarTop />
+              <NewNavTop />
 
 
 

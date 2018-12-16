@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import SimpleSlider from './SimpleSlider'
-import SimplerSlider2 from './SimplerSlider2'
 class HomePage extends Component {
     render() {
         return (

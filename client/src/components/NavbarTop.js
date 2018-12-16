@@ -7,7 +7,8 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const NavBarStyles = styled.div`
   display: flex;
-  justify-content: space-between;
+  flexDirection: 'row';
+  justifyContent: 'space-between';
   align-items: center;
   width: 100%;
   height: 10vh;
@@ -17,7 +18,7 @@ const NavBarStyles = styled.div`
   a {
     text-decoration: none;
     padding-left: 2vw;
-    color: white;
+    color: whitesmoke;
     &:hover {
       color: whitesmoke;
     }
@@ -30,10 +31,7 @@ const NavBarStyles = styled.div`
   }
   .right {
     display: flex;
-    margin-right: 2vw;
-    width: 45vw;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
 `
 
