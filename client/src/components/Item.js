@@ -14,10 +14,6 @@ class Item extends Component {
         }
     }
 
-    componentDidMount() {
-        axios.get()
-    }
-
     render() {
         return (
             <div>
