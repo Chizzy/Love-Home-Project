@@ -1,0 +1,13 @@
+.containerdiv {
+    height: 100%;
+    width: 100%;
+    /* opacity: 0.5; */
+    background-image: url("https://images.unsplash.com/photo-1527694224012-be005121c774?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
+    background-size: cover;
+}
+
+.textdiv {
+    background-color: rgba(9, 216, 23, 0.071);
+    height: 100%;
+    width: 100%;
+}
