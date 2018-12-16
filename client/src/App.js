@@ -1,12 +1,10 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import React, { Component } from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import React, {Component} from 'react';
 import './App.css';
-import {PricingTable, PricingSlot, PricingDetail} from 'react-pricing-table'
 import NavbarTop from './components/NavbarTop';
 import NavbarBottom from './components/NavbarBottom';
-import AboutUsPage from './components/AboutUsPage'
 import ContactUsPage from './components/ContactUsPage'
-import AboutMePage from './components/AboutMePage';
+import AboutUsPage from './components/AboutUsPage';
 import DesignServicesPage from './components/DesignServicesPage'
 import HomePage from './components/HomePage'
 import OrderConfirmationPage from './components/OrderConfirmationPage'
@@ -14,53 +12,40 @@ import OrderReviewPage from './components/OrderReviewPage'
 import ProfilePage from './components/ProfilePage'
 import ShoppingCartPage from './components/ShoppingCartPage'
 import StorePage from './components/StorePage'
+import {createGlobalStyle} from "styled-components";
 
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faIgloo } from '@fortawesome/free-solid-svg-icons'
-
-// library.add(faIgloo)
-
+const Global = createGlobalStyle`
+    body {
+        font-family: Montserrat;
+        font-weight: bold;
+    }
+`
 
 class App extends Component {
-  render() {
-    return (
-      <div>
-        <header>
-        </header>
-        <Router>
-          <div>
-            <p>
-              <NavbarTop />
+    render() {
+        return (
+            <Router>
+                <div>
+                    <Global/>
+                    <NavbarTop/>
 
+                    {/* //these are the paths on the url in the address bar and they dictate what the user will see */}
 
-
-
-
-              
-            </p>
-          
-
-            {/* //these are the paths on the url in the addressbar and they dictate what the user will see */}
-
-            <Switch>
-            <Route path='/AboutUsPage' component={AboutUsPage} />
-            <Route path='/ContactUsPage' component={ContactUsPage} />
-            <Route path='/DesignServicesPage' component={DesignServicesPage} />
-            <Route path='/AboutMePage' component={AboutMePage} />
-            <Route path='/OrderConfirmationPage' component={OrderConfirmationPage} />
-            <Route path='/OrderReviewPage' component={OrderReviewPage} />
-            <Route path='/ProfilePage' component={ProfilePage} />
-            <Route path='/ShoppingCartPage' component={ShoppingCartPage} />
-            <Route path='/StorePage' component={StorePage} />
-            <Route exact path='/' component={HomePage} />
-
-          </Switch>
-          <NavbarBottom />
-          </div>
-        </Router>
-      </div>
-    );
+                    <Switch>
+                        <Route path='/about-us' component={AboutUsPage}/>
+                        <Route path='/contact-us' component={ContactUsPage}/>
+                        <Route path='/design-services' component={DesignServicesPage}/>
+                        <Route path='/order-confirmation' component={OrderConfirmationPage}/>
+                        <Route path='/order-review' component={OrderReviewPage}/>
+                        <Route path='/profile' component={ProfilePage}/>
+                        <Route path='/shopping-cart' component={ShoppingCartPage}/>
+                        <Route path='/store' component={StorePage}/>
+                        <Route exact path='/' component={HomePage}/>
+                    </Switch>
+                    <NavbarBottom/>
+                </div>
+            </Router>
+        );
     }
 }
 

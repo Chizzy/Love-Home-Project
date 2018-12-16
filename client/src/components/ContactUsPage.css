@@ -33,7 +33,7 @@
 
 .feedback-input {
 	opacity:0.9;
-	color:#0493bd;
+	color:#398274;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-weight:400;
 	font-size: 18px;
@@ -53,14 +53,14 @@
 .feedback-input:focus{
 	background: #fff;
 	box-shadow: 0;
-	border: 3px solid #3498db;
-	color: #3498db;
+	border: 3px solid #398274;
+	color: #398274;
 	outline: none;
   padding: 13px 13px 13px 54px;
 }
 
 .focused{
-	color:#30aed6;
+	color:#398274;
 	border:#398274 solid 10px;
 }
 
@@ -130,7 +130,7 @@ input:focus, textarea:focus {
 
 #button-green:hover{
 	background-color: rgba(0,0,0,0);
-	color: #0493bd;
+	color: #398274;
 }
 
 .submit:hover {

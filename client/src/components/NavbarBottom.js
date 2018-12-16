@@ -10,7 +10,6 @@ const NavBarStyles = styled.div`
   height: 10vh;
   font-size: 1rem;
   background-color: #888c8f;
-  font-family: 'montserat';
   a {
     text-decoration: none;
     padding-left: 2vw;
@@ -34,8 +33,8 @@ class NavbarTop extends Component {
             <div>
             <NavBarStyles>
               <div className="right">
-                <Link to="/AboutUs">About Us</Link>
-                <Link to="/ContactUs">Contact Us</Link>
+                <Link to="/about-us">About Us</Link>
+                <Link to="/contact-us">Contact Us</Link>
                 <div className="instagramlogo">
                 <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/loveforhome_design/">
                 <img height="20" src="https://tighestimepieces.com/wp-content/uploads/2016/11/Instagram-icon-WHITE-300x300.png" alt="Instagram"/>
