@@ -1,0 +1,50 @@
+#splash {
+}
+.splashdiv {
+    display: flex;
+}
+
+
+
+/* .wordsdiv {
+    height: 60%;
+    width: 60%;
+    border: white solid;
+    background-color: whitesmoke;
+    position: relative;
+    opacity: 0.8;
+    font-size: 50px;
+    left: -690px;
+    top: 200px;
+    color: black;
+    
+} */
+
+.bigdiv {
+    display: flex;
+
+}
+
+.hiw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#how {
+    font-size: 70px;
+}
+
+.stepfont {
+    font-size: 40px;
+}
+
+#middlepic {
+    position: relative;
+    left: 40.9844px;
+}
+
+#steps2 {
+    position: relative;
+    left: 28.0468px;
+}

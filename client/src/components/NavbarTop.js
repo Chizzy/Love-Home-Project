@@ -17,7 +17,7 @@ const NavBarStyles = styled.div`
   a {
     text-decoration: none;
     padding-left: 2vw;
-    color: white;
+    color: whitesmoke;
     &:hover {
       color: whitesmoke;
     }
