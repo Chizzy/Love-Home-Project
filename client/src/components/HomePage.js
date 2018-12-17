@@ -18,15 +18,31 @@ class HomePage extends Component {
             </div>
 
             <center><h1 id="how">How It Works</h1></center>
+            
+            
             <div className="bigdiv">
                 <div className="hiw">
-                    <img src="http://i64.tinypic.com/359d4qh.png" alt=""/><p id="steps"> 1. Pick Your Design Package</p>
+                
+                    <img src="http://i64.tinypic.com/359d4qh.png" alt=""/>
+                   
+                    
+                        <p id="steps"> 1. Pick Your Design Package</p>
+                       
                 </div>
                 <div className="hiw">
-                    <img src="http://i67.tinypic.com/spf1ux.png" alt=""/><p id="steps"> 2. Shop From Our Recomended Products</p>
+              
+                    <img src="http://i67.tinypic.com/spf1ux.png" alt=""/>
+                    
+                    <p id="steps"> 2. Shop From Our Recomended Products</p>
+                    
                 </div>
                 <div className="hiw">
-                    <img src="http://i68.tinypic.com/fw2lwz.png" alt=""/><p id="steps"> 3. We Ship Your Selections Directly To You!</p>
+                    
+                        <img src="http://i68.tinypic.com/fw2lwz.png" alt=""/>
+                        
+                    <p id="steps"> 3. We Ship Your Selections Directly To You!</p> 
+                    
+                    
                 </div>
             </div>
 
