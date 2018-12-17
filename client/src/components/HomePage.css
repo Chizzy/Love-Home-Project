@@ -1,0 +1,19 @@
+#splash {
+}
+.splashdiv {
+    display: flex;
+}
+
+
+
+.wordsdiv {
+    height: 450px;
+    width: 900px;
+    border: white solid;
+    background-color: whitesmoke;
+    position: relative;
+    left: -485px;
+    top: 131.625px;
+    opacity: 0.8;
+    
+}
