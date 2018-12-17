@@ -6,9 +6,8 @@ class Item extends Component {
     state = {
         item: {}
     }
-
+    
     componentDidMount() {
-        
     }
 
     render() {
