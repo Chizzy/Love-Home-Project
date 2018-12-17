@@ -3,14 +3,14 @@ import axios from'axios';
 import {Link} from "react-router-dom";
 import styled from "styled-components"
 
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+
 class LogInPage extends Component {
 
     state = {
         users: [],
-        newUser: {
-            name: '',
-            password: ''
-        }
+        newUser: {}
     }
 
     handleChange = (event) => {
@@ -74,11 +74,11 @@ class LogInPage extends Component {
                     </div>
                     <div>
                         <label htmlFor="zip code">Zip Code: </label>
-                        <input onChange={this.handleChange} type="text" name="zip code"/>
+                        <input onChange={this.handleChange} type="text" name="zip_code"/>
                     </div>
                     <div>
                         <label htmlFor="phone number">Phone Number: </label>
-                        <input onChange={this.handleChange} type="text" name="phone number"/>
+                        <input onChange={this.handleChange} type="text" name="phone_number"/>
                     </div>
                     <button type="submit">Create User</button>
                 </form>

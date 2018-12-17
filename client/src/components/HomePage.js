@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SimpleSlider from './SimpleSlider'
 import './HomePage.css'
+import styled from 'styled-components'
 
 const SplashImage = styled.div`
     background: url('https://images.unsplash.com/photo-1519974719765-e6559eac2575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');

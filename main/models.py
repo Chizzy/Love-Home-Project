@@ -42,7 +42,7 @@ class User(models.Model):
     billing_city = models.CharField(max_length=255)
     billing_state = models.CharField(max_length=255)
     billing_zip_code = models.CharField(max_length=255)
-    cart = models.OneToOneField(Cart, on_delete=models.CASCADE, related_name='user', primary_key=True)
+    cart = models.OneToOneField(Cart, on_delete=models.CASCADE, related_name='user')
 
     def __str__(self):
         return self.name

@@ -20,6 +20,7 @@ class CartSerializer(serializers.ModelSerializer):
         fields = ('pk', 'total', 'quantity', 'items')
 
 class UserSerializer(serializers.ModelSerializer):
+    pk = serializers.ReadOnlyField()
     cart = serializers.PrimaryKeyRelatedField(queryset=Cart.objects.all())
     class Meta:
         model = User
