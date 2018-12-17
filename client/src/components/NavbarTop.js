@@ -55,7 +55,7 @@ class NavbarTop extends Component {
                         <Link to="/profile">Profile</Link>
 
                         <div>
-                            <i class="fas fa-shopping-cart"></i>
+                            <i className="fas fa-shopping-cart"></i>
                         </div>
                         <Link to="/shopping-cart">
 

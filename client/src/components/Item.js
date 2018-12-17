@@ -4,14 +4,11 @@ import axios from 'axios'
 class Item extends Component {
 
     state = {
-        product: {
-            type: '',
-            name: '',
-            price: '',
-            description: '',
-            image_url: '',
-            category: ''
-        }
+        item: {}
+    }
+
+    componentDidMount() {
+        
     }
 
     render() {

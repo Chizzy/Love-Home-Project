@@ -21,8 +21,8 @@ class Item(models.Model):
 
 
 class Cart(models.Model):
-    total = models.CharField(max_length=255)
-    quantity = models.CharField(max_length=255)
+    total = models.IntegerField()
+    quantity = models.IntegerField()
     items = models.ManyToManyField(Item, blank=True, null=True, related_name='cart')
 
     def __str__(self):

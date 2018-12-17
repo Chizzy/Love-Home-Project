@@ -9,35 +9,56 @@ const ItemListStyle = styled.div`
     justify-content: center;
     align-items: center;
     justify-content space-around;
-`
+`;
+
+const ItemStyle = styled.div`
+    a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        color: black;
+    }
+`;
 
 const SearchStyle = styled.div`
     display: flex;
     align-items: center;
     margin-top: 1rem;
-`
+`;
 
 class StorePage extends Component {
 
     state = {
         itemList: [],
         search: '',
-        category: ''
+        category: '',
+        selected: false
     }
 
     componentDidMount() {
         axios.get('api/items').then((res) => {
             this.setState({itemList: res.data})
-            console.log(res.data)
         })
+        // axios.get('api/categories').then((res) => {
+        //     this.setState({category: res.data})
+        //     console.log(res.data)
+        // })
     }
 
     searchFilter = (event) => {
         this.setState({search: event.target.value})
     }
 
-    categoryFilter = () => {
+    toggleSelected = (event) => {
+        const currentState = this.state.selected;
+        this.setState({selected: !currentState})
+    }
 
+    categoryFilter = (event) => {
+        const category = event.target.value;
+        this.state.itemList.filter(item => item.category ===  this.setState({category: category}));
+        console.log(category)
     }
 
     render() {
@@ -50,29 +71,29 @@ class StorePage extends Component {
             <div>
                 <SearchStyle>
                     <div className="col-sm-2">
-                        <input type="text" className="form-rounded form-control" placeholder="Search"/>
+                        <input type="text" className="form-rounded form-control" placeholder="Search" value={this.state.search} onChange={this.searchFilter}/>
                     </div>
-                    <div className="dropdown show">
-                        <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div className="dropdown">
+                        <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Filter by Style
-                        </a>
-
-                        <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a className="dropdown-item" href="#">Modern</a>
-                            <a className="dropdown-item" href="#">Glam</a>
-                            <a className="dropdown-item" href="#">Minimalist</a>
+                        </button>
+                        <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button className={`${this.state.selected ? 'active': null} dropdown-item`} type="button" onClick={(event) => {this.toggleSelected(event); this.categoryFilter(event)}} value="all">All</button>
+                            <button className={`${this.state.selected ? 'active': null} dropdown-item`} type="button" onClick={(event) => {this.toggleSelected(event); this.categoryFilter(event)}} value="modern">Modern</button>
+                            <button className={`${this.state.selected ? 'active': null} dropdown-item`} type="button" onClick={(event) => {this.toggleSelected(event); this.categoryFilter(event)}} value="glam">Glam</button>
+                            <button className={`${this.state.selected ? 'active': null} dropdown-item`} type="button" onClick={(event) => {this.toggleSelected(event); this.categoryFilter(event)}} value="minimalist">Minimalist</button>
                         </div>
                     </div>
                 </SearchStyle>
                 <ItemListStyle>
                     {filteredItems.map(item => (
-                        <div key={item.pk}>
+                        <ItemStyle key={item.pk}>
                             <Link to={`/item/${item.pk}`}>
                                 <img heigth="250" width="250" src={item.image_url} alt="item"/>
                                 <h3>{item.name} ${item.price}</h3>
                             </Link>
-                        </div>
+                        </ItemStyle>
                     ))}
                 </ItemListStyle>
             </div>
