@@ -1,7 +1,7 @@
 [
     {
     "model": "main.cart",
-    "fk": 1,
+    "pk": 1,
     "fields": {
       "total": 400,
       "quantity": 3,
@@ -10,7 +10,7 @@
   },
   {
     "model": "main.cart",
-    "fk": 2,
+    "pk": 2,
     "fields": {
       "total": 2450,
       "quantity": 3,

@@ -1,7 +1,7 @@
 [
   {
     "model": "main.user",
-    "fk": 1,
+    "pk": 1,
     "fields": {
       "name": "Kishi Bashi",
       "email": "kishi@kishi.com",
@@ -15,13 +15,13 @@
       "billing_city": "Atlanta",
       "billing_state": "Georgia",
       "billing_zip_code": "30300",
-      "cart": 1
+      "cart": 2
 
     }
   },
   {
   "model": "main.user",
-    "fk": 2,
+    "pk": 2,
     "fields": {
       "name": "John Doe",
       "email": "john@john.com",
@@ -35,7 +35,7 @@
       "billing_city": "Augusta",
       "billing_state": "Georgia",
       "billing_zip_code": "30300",
-      "cart": 2
+      "cart": 1
 
     }
   }

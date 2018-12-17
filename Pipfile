@@ -19,7 +19,6 @@ django-cors-headers = "*"
 whitenoise = "*"
 requests = "*"
 oauthlib = "*"
-django-serializers = "*"
 serializers = "*"
 
 [requires]

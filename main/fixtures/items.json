@@ -1,7 +1,7 @@
 [
   {
     "model": "main.item",
-    "fk": 1,
+    "pk": 1,
     "fields": {
       "type": "pillow",
       "name": "gold rectangle modern designed pillow",
@@ -13,7 +13,7 @@
   },
   {
     "model": "main.item",
-    "fk": 2,
+    "pk": 2,
     "fields": {
       "type": "pillow",
       "name": "fluffy pillow",
@@ -25,7 +25,7 @@
   },
   {
     "model": "main.item",
-    "fk": 3,
+    "pk": 3,
     "fields": {
       "type": "pillow",
       "name": "triangle pillow",
@@ -37,7 +37,7 @@
   },
   {
     "model": "main.item",
-    "fk": 4,
+    "pk": 4,
     "fields": {
       "type": "loveseat",
       "name": "Brown Loveseat",
@@ -49,7 +49,7 @@
   },
   {
     "model": "main.item",
-    "fk": 5,
+    "pk": 5,
     "fields": {
       "type": "loveseat",
       "name": "Monroe Loveseat",
@@ -61,7 +61,7 @@
   },
   {
     "model": "main.item",
-    "fk": 6,
+    "pk": 6,
     "fields": {
       "type": "loveseat",
       "name": "Bryant Loveseat",
@@ -73,7 +73,7 @@
   },
   {
     "model": "main.item",
-    "fk": 7,
+    "pk": 7,
     "fields": {
       "type": "sofa",
       "name": "Comfortable Modern Loveseat",
@@ -85,7 +85,7 @@
   },
   {
     "model": "main.item",
-    "fk": 8,
+    "pk": 8,
     "fields": {
       "type": "sofa",
       "name": "Minimalist Sofa",
@@ -97,7 +97,7 @@
   },
   {
     "model": "main.item",
-    "fk": 9,
+    "pk": 9,
     "fields": {
       "type": "sofa",
       "name": "Curved Sofa",
@@ -109,7 +109,7 @@
   },
   {
     "model": "main.item",
-    "fk": 10,
+    "pk": 10,
     "fields": {
       "type": "chair",
       "name": "Mid Century Chair",
@@ -121,7 +121,7 @@
   },
   {
     "model": "main.item",
-    "fk": 11,
+    "pk": 11,
     "fields": {
       "type": "chair",
       "name": "Blush Glam Chair",
@@ -133,7 +133,7 @@
   },
   {
     "model": "main.item",
-    "fk": 12,
+    "pk": 12,
     "fields": {
       "type": "chair",
       "name": "Arm Chair",
@@ -145,7 +145,7 @@
   },
   {
     "model": "main.item",
-    "fk": 13,
+    "pk": 13,
     "fields": {
       "type": "side table",
       "name": "Minimalist Side Table",
@@ -157,7 +157,7 @@
   },
   {
     "model": "main.item",
-    "fk": 14,
+    "pk": 14,
     "fields": {
       "type": "side table",
       "name": "Modern Side Table",
@@ -169,7 +169,7 @@
   },
   {
     "model": "main.item",
-    "fk": 15,
+    "pk": 15,
     "fields": {
       "type": "side table",
       "name": "Marble side table",
@@ -181,7 +181,7 @@
   },
   {
     "model": "main.item",
-    "fk": 16,
+    "pk": 16,
     "fields": {
       "type": "coffee table",
       "name": "Brass Coffee Table",
@@ -193,7 +193,7 @@
   },
   {
     "model": "main.item",
-    "fk": 17,
+    "pk": 17,
     "fields": {
       "type": "coffee table",
       "name": "Marble side table",
@@ -205,7 +205,7 @@
   },
   {
     "model": "main.item",
-    "fk": 18,
+    "pk": 18,
     "fields": {
       "type": "coffee table",
       "name": "Black Minimalist Coffee Table",
@@ -217,7 +217,7 @@
   },
   {
     "model": "main.item",
-    "fk": 19,
+    "pk": 19,
     "fields": {
       "type": "lamp",
       "name": "Modern Steel Lamp",
@@ -229,7 +229,7 @@
   },
   {
     "model": "main.item",
-    "fk": 20,
+    "pk": 20,
     "fields": {
       "type": "lamp",
       "name": "Glam Table Lamp",
@@ -241,7 +241,7 @@
   },
   {
     "model": "main.item",
-    "fk": 21,
+    "pk": 21,
     "fields": {
       "type": "lamp",
       "name": "Minimalist Floor Lamp",
@@ -253,7 +253,7 @@
   },
   {
     "model": "main.item",
-    "fk": 22,
+    "pk": 22,
     "fields": {
       "type": "rugs",
       "name": "Modern Living Room Rug",
@@ -265,7 +265,7 @@
   },
   {
     "model": "main.item",
-    "fk": 23,
+    "pk": 23,
     "fields": {
       "type": "rugs",
       "name": "Abstract Rug",
@@ -277,7 +277,7 @@
   },
   {
     "model": "main.item",
-    "fk": 24,
+    "pk": 24,
     "fields": {
       "type": "rugs",
       "name": "Glam Shag Rug",

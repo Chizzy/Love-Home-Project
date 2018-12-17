@@ -6,8 +6,8 @@ from . import views
 router = routers.DefaultRouter()
 router.register('user', views.UserView)
 router.register('cart', views.CartView)
-router.register('item', views.ItemView)
-router.register('category', views.CategoryView)
+router.register('items', views.ItemView)
+router.register('categories', views.CategoryView)
 
 
 urlpatterns = [

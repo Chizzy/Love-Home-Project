@@ -5,24 +5,22 @@ from .models import User, Cart, Item, Category
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ('fk', 'name', 'description')
-
+        fields = ('pk', 'name', 'description')
 
 class ItemSerializer(serializers.ModelSerializer):
-    category = CategorySerializer(many=True, read_only=True)
+    category = serializers.PrimaryKeyRelatedField(queryset=Category.objects.all(), source='category.name')
     class Meta:
         model = Item
-        fields = ('fk', 'type', 'name', 'price', 'description', 'image_url', 'category')
-
+        fields = ('pk', 'type', 'name', 'price', 'description', 'image_url', 'category')
 
 class CartSerializer(serializers.ModelSerializer):
-    items = ItemSerializer(many=True, read_only=True)
+    items = serializers.PrimaryKeyRelatedField(queryset=Item.objects.all(), many=True)
     class Meta:
         model = Cart
-        fields = ('fk', 'total', 'quantity', 'items')
+        fields = ('pk', 'total', 'quantity', 'items')
 
 class UserSerializer(serializers.ModelSerializer):
-    cart = CartSerializer(many=True, read_only=True)
+    cart = serializers.PrimaryKeyRelatedField(queryset=Cart.objects.all())
     class Meta:
         model = User
-        fields = ('fk', 'name', 'email', 'password', 'address', 'city', 'state', 'zip_code', 'phone_number', 'billing_address', 'billing_city', 'billing_state', 'billing_zip_code', 'cart')
+        fields = ('pk', 'name', 'email', 'password', 'address', 'city', 'state', 'zip_code', 'phone_number', 'billing_address', 'billing_city', 'billing_state', 'billing_zip_code', 'cart')

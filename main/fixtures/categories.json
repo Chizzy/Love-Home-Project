@@ -1,7 +1,7 @@
 [
   {
     "model": "main.category",
-    "fk": 1,
+    "pk": 1,
     "fields": {
       "name": "modern",
       "description": "Neutral, earthy colors and presents simplicity"
@@ -9,7 +9,7 @@
   },
   {
     "model": "main.category",
-    "fk": 2,
+    "pk": 2,
     "fields": {
       "name": "glam",
       "description": "Chic neutrals, brilliant metallics, and luscious fabrics"
@@ -17,7 +17,7 @@
   },
   {
     "model": "main.category",
-    "fk": 3,
+    "pk": 3,
     "fields": {
       "name": "minimalist",
       "description": "Simple shapes, colors all to a bare minimum"
