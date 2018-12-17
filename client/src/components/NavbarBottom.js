@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 const NavBarStyles = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 10vh;
   font-size: 1rem;
@@ -21,10 +21,6 @@ const NavBarStyles = styled.div`
   .left {
     width: 55vw;
   }
-  .right {
-    display: flex;
-    justify-content: space-between;
-  }
 `;
 
 class NavbarTop extends Component {
@@ -32,7 +28,6 @@ class NavbarTop extends Component {
         return (
             <div>
             <NavBarStyles>
-              <div className="right">
                 <Link to="/about-us">About Us</Link>
                 <Link to="/contact-us">Contact Us</Link>
                 <div className="instagramlogo">
@@ -54,8 +49,6 @@ class NavbarTop extends Component {
                   <a target="_blank" rel="noopener noreferrer" href="https://www.pinterest.com/loveforhomedesign/?autologin=true">
                 <img height="20" src="https://www.freeiconspng.com/uploads/white-pinterest-logo-png--30.png" alt="Pinterest"/>
                 </a>
-                </div>
-                
                 </div>
             </NavBarStyles>
           </div>

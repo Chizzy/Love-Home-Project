@@ -7,8 +7,9 @@ import {faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 
 const NavBarStyles = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
   height: 10vh;
   font-size: 1rem;
@@ -27,13 +28,6 @@ const NavBarStyles = styled.div`
     display: flex;
     align-items: center;
   }
-  .right {
-    display: flex;
-    margin-right: 2vw;
-    width: 45vw;
-    display: flex;
-    justify-content: space-around;
-  }
 `
 
 class NavbarTop extends Component {
@@ -48,21 +42,13 @@ class NavbarTop extends Component {
                 </div>
                 </Link>
                 <NavBarStyles>
-
-                    <div className="right">
                         <Link to="/design-services">Design Services</Link>
                         <Link to="/store">Shop</Link>
+                        <Link to="/login">LogIn</Link>
                         <Link to="/profile">Profile</Link>
-
-                        <div>
-                            <i className="fas fa-shopping-cart"></i>
-                        </div>
                         <Link to="/shopping-cart">
-
                             <FontAwesomeIcon icon={faShoppingCart}/>
-
                         </Link>
-                    </div>
                 </NavBarStyles>
             </div>
         );

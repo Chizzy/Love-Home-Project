@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import React, {Component} from 'react';
 import './App.css';
 import NavbarTop from './components/NavbarTop';
@@ -6,6 +6,8 @@ import NavbarBottom from './components/NavbarBottom';
 import ContactUsPage from './components/ContactUsPage'
 import AboutUsPage from './components/AboutUsPage';
 import DesignServicesPage from './components/DesignServicesPage'
+import ItemPage from './components/ItemPage';
+import LogInPage from './components/LogInPage';
 import HomePage from './components/HomePage'
 import OrderConfirmationPage from './components/OrderConfirmationPage'
 import OrderReviewPage from './components/OrderReviewPage'
@@ -35,6 +37,8 @@ class App extends Component {
                         <Route path='/about-us' component={AboutUsPage}/>
                         <Route path='/contact-us' component={ContactUsPage}/>
                         <Route path='/design-services' component={DesignServicesPage}/>
+                        <Route path='/items/:id' component={ItemPage} />
+                        <Route path='/login' component={LogInPage} />
                         <Route path='/order-confirmation' component={OrderConfirmationPage}/>
                         <Route path='/order-review' component={OrderReviewPage}/>
                         <Route path='/profile' component={ProfilePage}/>

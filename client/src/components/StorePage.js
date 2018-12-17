@@ -37,7 +37,7 @@ class StorePage extends Component {
     }
 
     componentDidMount() {
-        axios.get('api/items').then((res) => {
+        axios.get('/api/items').then((res) => {
             this.setState({itemList: res.data})
         })
         // axios.get('api/categories').then((res) => {
@@ -89,9 +89,9 @@ class StorePage extends Component {
                 <ItemListStyle>
                     {filteredItems.map(item => (
                         <ItemStyle key={item.pk}>
-                            <Link to={`/item/${item.pk}`}>
-                                <img heigth="250" width="250" src={item.image_url} alt="item"/>
-                                <h3>{item.name} ${item.price}</h3>
+                            <Link to={`/items/${item.pk}`}>
+                                <img height="250" width="250" src={item.image_url} alt="item"/>
+                                    <h3>{item.name} ${item.price}</h3>
                             </Link>
                         </ItemStyle>
                     ))}
