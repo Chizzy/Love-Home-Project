@@ -7,7 +7,11 @@
 }
 
 .textdiv {
-    background-color: rgba(9, 216, 23, 0.071);
+    background-color: rgba(35, 244, 136, 0.171);
     height: 100%;
     width: 100%;
+}
+
+.boldme {
+    font-weight: bold;
 }

@@ -10,14 +10,18 @@ class AboutUsPage extends Component {
                  <center>
 
                  <h1>ABOUT US</h1>
-                <h1>Love Home Interor Design</h1></center>
-                
-                <p><center>
+                 <p>
                 <img height="250" src="http://i63.tinypic.com/if3l6r.png" alt=""/>
                 
-                </center></p>
+                </p>
+                <h1><span className="boldme">Love Home Interor Design
+
+                </span></h1></center>
                 
-                <h3>Love Home is an e-design tech start-up solution that simplifies and personalizes the home shopping experience. 
+
+                
+                
+                <h3><span className="boldme">Love Home</span> is an e-design tech start-up solution that simplifies and personalizes the home shopping experience. 
             <p>  
                     Our company brings together e-commerce and e-design in a unique way so consumers can lead the design process for themselves and eliminate the need for traditional, boxed design solutions currently on the market. </p>
                     
