@@ -34,7 +34,7 @@ class LogInPage extends Component {
     render() {
             const allUsers = this.state.users.map(user => (
             <div key={user.pk}>
-                <Link to={`/api/user/${user.pk}`}>{user.name}</Link>
+                <Link to={`/user-profile/${user.pk}`}>{user.name}</Link>
             </div>
         ))
         return (

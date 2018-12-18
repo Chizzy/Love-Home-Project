@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 class ProfilePage extends Component {
 
@@ -20,7 +21,7 @@ class ProfilePage extends Component {
             <div>
                 <div>
                     <h1>{this.state.user.name}'s Profile</h1>
-                    <button>Edit</button>
+                    <button><Link to={`/api/user/${this.props.match.params.id}/edit-profile`}>Edit Profile</Link></button>
                 </div>
                 <h4>{this.state.user.email}</h4>
                 <h4>{this.state.user.address}</h4>
