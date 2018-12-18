@@ -15,8 +15,8 @@ In this app, users are able to make a profile, browse through our selection of l
 * Django
 * React
 * Project Planning - [Trello](https://trello.com/b/Y4XWys3x/project-4-love-home)
-* ERD - [LucidChart] - (https://www.lucidchart.com/documents/edit/f4a4bc92-1fbd-426b-9a1f-00f4e1f0e9d0/0?shared=true&)
-* Wireframe (made by UX team) - [Zeplin] - (https://zpl.io/aREQjwv)
+* ERD - [LucidChart](https://www.lucidchart.com/documents/edit/f4a4bc92-1fbd-426b-9a1f-00f4e1f0e9d0/0?shared=true&)
+* Wireframe (made by UX team) - [Zeplin](https://zpl.io/aREQjwv)
 
 ## Features
 
