@@ -14,6 +14,7 @@ import OrderReviewPage from './components/OrderReviewPage'
 import ProfilePage from './components/ProfilePage'
 import ShoppingCartPage from './components/ShoppingCartPage'
 import StorePage from './components/StorePage'
+import EditProfilePage from './components/EditProfilePage'
 import {createGlobalStyle} from "styled-components";
 
 const Global = createGlobalStyle`
@@ -38,6 +39,7 @@ class App extends Component {
                         <Route path='/about-us' component={AboutUsPage}/>
                         <Route path='/contact-us' component={ContactUsPage}/>
                         <Route path='/design-services' component={DesignServicesPage}/>
+                        <Route path="/users/:userId/edit-profile" component={EditProfilePage} />
                         <Route path='/items/:id' component={ItemPage} />
                         <Route path='/login' component={LogInPage} />
                         <Route path='/order-confirmation' component={OrderConfirmationPage}/>
