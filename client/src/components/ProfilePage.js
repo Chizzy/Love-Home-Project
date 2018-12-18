@@ -3,6 +3,13 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
+const EditUserButton = styled.button`
+background-color: #888c8f;
+  color: white;
+  font-size: 2.3rem;
+  padding: 7.5px 5px;
+`
+
 const SplashImage = styled.div`
     background: url('https://goop.com/wp-content/uploads/2017/11/The_Cozy-Indoors_Starter_Kit_supports_home_shop-TRU456511-1-1.jpg');
     background-size: cover;
@@ -26,6 +33,12 @@ const SplashImage = styled.div`
         margin: auto;
         padding: 10px;
         text-align: center;
+
+    .somebutton {
+        width: 10px;
+
+    }   
+     
     }
     }`
 
@@ -58,8 +71,8 @@ class ProfilePage extends Component {
             <div>
                 <div>
                     <h1>{this.state.user.name}'s Profile</h1>
-                    <button><Link to={`/user-profile/${this.props.match.params.id}/edit-profile`}>Edit Profile</Link></button>
-                    <button onClick={() => this.onDelete(this.state.user.id)}>Delete Profile</button>
+                    <button className="somebutton"><Link to={`/user-profile/${this.props.match.params.id}/edit-profile`}>Edit Profile</Link></button>
+                    <button className="somebutton" onClick={() => this.onDelete(this.state.user.id)}>Delete Profile</button>
                 </div>
                 
                 <div className="splashdiv">
@@ -72,6 +85,9 @@ class ProfilePage extends Component {
                         <h4>{this.state.user.state}</h4>
                         <h4>{this.state.user.zip_code}</h4>
                         <h4>{this.state.user.phone_number}</h4>
+                        <EditUserButton><Link to={`/user-profile/${this.props.match.params.id}/edit-profile`}>Edit Profile</Link></EditUserButton>
+                        <EditUserButton onClick={() => this.onDelete(this.state.user.id)}>Delete Profile</EditUserButton>
+        
                             </div></div>
                     </SplashImage>
                 </div>
