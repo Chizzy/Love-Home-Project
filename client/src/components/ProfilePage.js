@@ -14,7 +14,7 @@ const SplashImage = styled.div`
     background: url('https://goop.com/wp-content/uploads/2017/11/The_Cozy-Indoors_Starter_Kit_supports_home_shop-TRU456511-1-1.jpg');
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     display: flex;
 
     .wordsdiv {
@@ -71,9 +71,8 @@ class ProfilePage extends Component {
             <div>
                 <div>
                     <h1>{this.state.user.name}'s Profile</h1>
-                    <button className="somebutton"><Link to={`/user-profile/${this.props.match.params.id}/edit-profile`}>Edit Profile</Link></button>
-                    <button className="somebutton" onClick={() => this.onDelete(this.state.user.id)}>Delete Profile</button>
-                </div>
+                    
+                    </div>
                 
                 <div className="splashdiv">
                     {/* <img id="splash" width="100%" src="https://images.unsplash.com/photo-1519974719765-e6559eac2575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt=""/> */}
@@ -85,7 +84,7 @@ class ProfilePage extends Component {
                         <h4>{this.state.user.state}</h4>
                         <h4>{this.state.user.zip_code}</h4>
                         <h4>{this.state.user.phone_number}</h4>
-                        <EditUserButton><Link to={`/user-profile/${this.props.match.params.id}/edit-profile`}>Edit Profile</Link></EditUserButton>
+                        <Link to={`/user-profile/${this.props.match.params.id}/edit-profile`}><EditUserButton>Edit Profile</EditUserButton></Link>
                         <EditUserButton onClick={() => this.onDelete(this.state.user.id)}>Delete Profile</EditUserButton>
         
                             </div></div>
