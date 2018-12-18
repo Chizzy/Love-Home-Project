@@ -43,7 +43,7 @@ class LogInPage extends Component {
                      <h1>Select Your Name:</h1>
                      {allUsers}
                 </div>
-                <form id="sign-up-form">
+                <form onSubmit={this.handleSubmit} id="sign-up-form">
                     <div className="header">
                         <h1>Or Sign Up for Free</h1>
                     </div>

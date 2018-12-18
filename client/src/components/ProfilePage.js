@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-
 
 
 class ProfilePage extends Component {
@@ -14,17 +13,19 @@ class ProfilePage extends Component {
     componentDidMount() {
         const id = this.props.match.params.id;
         axios.get(`/api/user/${id}`).then((res) => {
-            this.setState({user: res.data})
+            this.setState({ user: res.data })
         })
     }
 
     onDelete() {
-        let id = this.state.user._id;
-        axios.delete(`/api/user/${id}`)
-          .then(response => {
-            this.props.history.push('/login')
-          })
-      }
+        console.log(this.state.user)
+        axios.delete(`/api/user/${this.state.user.pk}`)
+        .then(response => {
+            console.log(response.data)
+                this.setState({ user: response.data })
+                this.props.history.push(`/login`)
+            })
+    }
 
     render() {
         return (
@@ -32,7 +33,7 @@ class ProfilePage extends Component {
                 <div>
                     <h1>{this.state.user.name}'s Profile</h1>
                     <button><Link to={`/user-profile/${this.props.match.params.id}/edit-profile`}>Edit Profile</Link></button>
-                    <button onClick={this.onDelete.bind(this)}>Delete Account</button>
+                    <button onClick={() => this.onDelete(this.state.user.id)}>Delete Account</button>
                 </div>
                 <h4>{this.state.user.email}</h4>
                 <h4>{this.state.user.address}</h4>
