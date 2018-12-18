@@ -3,7 +3,6 @@ import {Link} from "react-router-dom";
 import styled from "styled-components";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faShoppingCart} from '@fortawesome/free-solid-svg-icons'
-import PropTypes from 'prop-types'
 
 
 const NavBarStyles = styled.div`
@@ -46,9 +45,7 @@ class NavBarTop extends Component {
                 <NavBarStyles>
                     <Link to="/design-services">Design Services</Link>
                     <Link to="/store">Shop</Link>
-                    {this.props.loggedIn ? (<h3 onClick={this.props.handleLogOut}>Log Out</h3>) : (
-                        <Link to="/login">Log In/Sign Up</Link>)}
-                    {this.props.loggedIn ? (<Link to={`/user-profile/${this.props.user.pk}`}>Profile</Link>) : null}
+                    <Link to="/login">Log In/Sign Up</Link>)}
                     <Link to="/shopping-cart">
                         <FontAwesomeIcon icon={faShoppingCart}/>
                     </Link>
@@ -59,8 +56,3 @@ class NavBarTop extends Component {
 }
 
 export default NavBarTop;
-
-NavBarTop.propTypes = {
-    loggedIn: PropTypes.bool.isRequired,
-    handleLogOut: PropTypes.func.isRequired
-};
