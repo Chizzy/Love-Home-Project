@@ -19,7 +19,7 @@ class ItemSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('pk', 'name', 'email', 'address', 'city', 'state', 'zip_code', 'phone_number')
+        fields = ('pk', 'email')
 
 class UserSerializerWithToken(serializers.ModelSerializer):
     token = serializers.SerializerMethodField()
