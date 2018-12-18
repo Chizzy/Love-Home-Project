@@ -26,3 +26,7 @@ In this app, users are able to make a profile, browse through our selection of l
 
 ## Future Development
 
+* Implementing the "Style Quiz"
+* Having user Authentication
+* Wish List
+* Personalized MoodBoard
