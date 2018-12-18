@@ -5,7 +5,19 @@ import styled from 'styled-components'
 
 
 class EditProfilePage extends Component {
-
+    state = {
+        users: [],
+        newUser: {
+          username: "",
+          password: "",
+          email: "",
+          address: "",
+          city: "",
+          state: "",
+          zip_code: "",
+          phone_number: ""
+        }
+      };
     render() {
         return (
            
