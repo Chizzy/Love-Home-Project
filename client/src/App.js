@@ -36,17 +36,17 @@ class App extends Component {
                     {/* //these are the paths on the url in the address bar and they dictate what the user will see */}
 
                     <Switch>
-                        <Route path='/about-us' component={AboutUsPage}/>
-                        <Route path='/contact-us' component={ContactUsPage}/>
-                        <Route path='/design-services' component={DesignServicesPage}/>
-                        <Route path='/items/:id' component={ItemPage}/>
-                        <Route path='/login' component={LogInPage}/>
-                        <Route path='/order-confirmation' component={OrderConfirmationPage}/>
-                        <Route path='/order-review' component={OrderReviewPage}/>
-                        <Route path='/user-profile/:id' component={ProfilePage}/>
-                        <Route path='/user-profile/:id/edit-profile' component={EditProfilePage}/>
-                        <Route path='/shopping-cart' component={ShoppingCartPage}/>
-                        <Route path='/store' component={StorePage}/>
+                        <Route exact path='/about-us' component={AboutUsPage}/>
+                        <Route exact path='/contact-us' component={ContactUsPage}/>
+                        <Route exact path='/design-services' component={DesignServicesPage}/>
+                        <Route exact path='/items/:id' component={ItemPage}/>
+                        <Route exact path='/login' component={LogInPage}/>
+                        <Route exact path='/order-confirmation' component={OrderConfirmationPage}/>
+                        <Route exact path='/order-review' component={OrderReviewPage}/>
+                        <Route exact path='/user-profile/:id' component={ProfilePage}/>
+                        <Route exact path='/user-profile/:id/edit-profile' component={EditProfilePage}/>
+                        <Route exact path='/shopping-cart' component={ShoppingCartPage}/>
+                        <Route exact path='/store' component={StorePage}/>
                         <Route exact path='/' component={HomePage}/>
                     </Switch>
                     <NavBarBottom/>
