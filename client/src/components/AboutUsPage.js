@@ -21,7 +21,7 @@ class AboutUsPage extends Component {
 
                 
                 
-                <h3><span className="boldme">Love Home</span> is an e-design tech start-up solution that simplifies and personalizes the home shopping experience. 
+                <h3><span className="boldme">Love Home</span> <span className="whitetext"> is an e-design tech start-up solution that simplifies and personalizes the home shopping experience.
             <p>  
                     Our company brings together e-commerce and e-design in a unique way so consumers can lead the design process for themselves and eliminate the need for traditional, boxed design solutions currently on the market. </p>
                     
@@ -42,6 +42,7 @@ class AboutUsPage extends Component {
                         <p>
                         Love Home Interior Design is the winner of the international award for "Best Interior Design company to Collaborate with General Assembly 2018” at Woman Owned Decoration & Design Awards gala and Visionary Design 2018 at AtlantaLux Awards gala.
                         </p>
+                </span>
 
 
                     
