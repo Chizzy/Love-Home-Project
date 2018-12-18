@@ -19,7 +19,7 @@ class LogInPage extends Component {
      handleSubmit = (event) => {
         event.preventDefault();
         axios.post('/api/user/', this.state.newUser).then((res) => {
-            this.props.history.push(`/user/${res.data._id}`)
+            this.props.history.push(`/user-profile/${res.data.pk}`)
             console.log(res.data)
         })
     }
