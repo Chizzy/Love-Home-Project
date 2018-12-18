@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import styled from 'styled-components'
-import NavBar from './NavBar'
 
 // const BackgroundColor = styled.div`
 // background-color: #0A1B0E;
@@ -14,7 +13,7 @@ import NavBar from './NavBar'
 
 
 
-class EditUser extends Component {
+class EditProfilePage extends Component {
     // state = {
     //     users: [],
     //     newUser: {
@@ -85,4 +84,4 @@ class EditUser extends Component {
     }
 }
 
-export default EditUser;
+export default EditProfilePage;

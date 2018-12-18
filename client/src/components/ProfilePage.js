@@ -21,7 +21,7 @@ class ProfilePage extends Component {
             <div>
                 <div>
                     <h1>{this.state.user.name}'s Profile</h1>
-                    <button><Link to={`/api/user/${this.props.match.params.id}/edit-profile`}>Edit Profile</Link></button>
+                    <button><Link to={`/user-profile/${this.props.match.params.id}/edit-profile`}>Edit Profile</Link></button>
                 </div>
                 <h4>{this.state.user.email}</h4>
                 <h4>{this.state.user.address}</h4>
