@@ -39,12 +39,12 @@ class App extends Component {
                         <Route path='/about-us' component={AboutUsPage}/>
                         <Route path='/contact-us' component={ContactUsPage}/>
                         <Route path='/design-services' component={DesignServicesPage}/>
-                        <Route path="/users/:userId/edit-profile" component={EditProfilePage} />
+                        <Route path="/user-profile/:id/edit-profile" component={EditProfilePage} />
                         <Route path='/items/:id' component={ItemPage} />
                         <Route path='/login' component={LogInPage} />
                         <Route path='/order-confirmation' component={OrderConfirmationPage}/>
                         <Route path='/order-review' component={OrderReviewPage}/>
-                        <Route path='/profile' component={ProfilePage}/>
+                        <Route path='/user-profile/:id' component={ProfilePage}/>
                         <Route path='/shopping-cart' component={ShoppingCartPage}/>
                         <Route path='/store' component={StorePage}/>
                         <Route exact path='/' component={HomePage}/>
