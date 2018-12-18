@@ -8,7 +8,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #9e2021;
+  color: #398274;
   background-color: #f2f2f2;
 }
 h1 {
@@ -31,7 +31,7 @@ h1 {
 .sign-up {
   width: 50%;
   height: 70px;
-  border: solid 2px #9e2021;
+  border: solid 2px #398274;
   text-align: center;
 }
 .sign-up:hover, .log-in:hover {
@@ -44,7 +44,7 @@ h1 {
 .log-in {
   width: 50%;
   height: 70px;
-  border: solid 2px #9e2021;
+  border: solid 2px #398274;
   margin-top: -70px;
   margin-left: 178px;
 }
@@ -53,18 +53,18 @@ h1 {
   text-align: center;
 }
 .active {
-  background-color: #9e2021;
+  background-color: #398274;
   color: #fff;
 }
 input {
   width: 100%;
   padding: 12px;
-  border: solid 1px #9e2021;
+  border: solid 1px #398274;
   margin-top: 10px;
   font-family: inherit;
 }
-.first-name, .last-name {
-  width: 49.4%;
+.name {
+  width: 100%;
   margin-top: -5px;
 }
 .last-name {
@@ -80,8 +80,8 @@ button {
   width: 100%;
   margin-top: 10px;
   padding: 20px;
-  border: solid 2px #9e2021;
-  background-color: #9e2021;
+  border: solid 2px #398274;
+  background-color: #398274;
   color: #fff;
   font-size: 1.4em;
   text-transform: uppercase;
