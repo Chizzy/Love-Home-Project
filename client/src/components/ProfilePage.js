@@ -18,12 +18,21 @@ class ProfilePage extends Component {
         })
     }
 
+    onDelete() {
+        let id = this.state.user._id;
+        axios.delete(`/api/user/${id}`)
+          .then(response => {
+            this.props.history.push('/login')
+          })
+      }
+
     render() {
         return (
             <div>
                 <div>
                     <h1>{this.state.user.name}'s Profile</h1>
                     <button><Link to={`/user-profile/${this.props.match.params.id}/edit-profile`}>Edit Profile</Link></button>
+                    <button onClick={this.onDelete.bind(this)}>Delete Account</button>
                 </div>
                 <h4>{this.state.user.email}</h4>
                 <h4>{this.state.user.address}</h4>
