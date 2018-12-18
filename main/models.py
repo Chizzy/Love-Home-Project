@@ -20,15 +20,6 @@ class Item(models.Model):
         return self.name
 
 
-class Cart(models.Model):
-    total = models.IntegerField()
-    quantity = models.IntegerField()
-    items = models.ManyToManyField(Item, blank=True, null=True, related_name='cart')
-
-    def __str__(self):
-        return self.total
-
-
 class User(models.Model):
     name = models.CharField(max_length=255)
     email = models.EmailField(max_length=255)
@@ -38,11 +29,17 @@ class User(models.Model):
     state = models.CharField(max_length=255)
     zip_code = models.CharField(max_length=255)
     phone_number = models.CharField(max_length=255)
-    billing_address = models.CharField(max_length=255)
-    billing_city = models.CharField(max_length=255)
-    billing_state = models.CharField(max_length=255)
-    billing_zip_code = models.CharField(max_length=255)
-    cart = models.OneToOneField(Cart, on_delete=models.CASCADE, related_name='user')
+
 
     def __str__(self):
         return self.name
+
+
+class Cart(models.Model):
+    total = models.IntegerField()
+    quantity = models.IntegerField()
+    items = models.ManyToManyField(Item, blank=True, null=True, related_name='cart')
+    user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True, related_name='cart')
+
+
+

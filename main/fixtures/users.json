@@ -10,13 +10,7 @@
       "city": "Atlanta",
       "state": "GA",
       "zip_code": "30303",
-      "phone_number": "555-555-5555",
-      "billing_address": "901 Shelby Drive",
-      "billing_city": "Atlanta",
-      "billing_state": "Georgia",
-      "billing_zip_code": "30300",
-      "cart": 2
-
+      "phone_number": "555-555-5555"
     }
   },
   {
@@ -30,13 +24,7 @@
       "city": "Augusta",
       "state": "GA",
       "zip_code": "30300",
-      "phone_number": "555-555-5555",
-      "billing_address": "441 North Highland Ave",
-      "billing_city": "Augusta",
-      "billing_state": "Georgia",
-      "billing_zip_code": "30300",
-      "cart": 1
-
+      "phone_number": "555-555-5555"
     }
   }
   ]

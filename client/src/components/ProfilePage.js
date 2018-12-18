@@ -1,10 +1,33 @@
 import React, {Component} from 'react';
+import axios from 'axios'
 
 class ProfilePage extends Component {
+
+    state = {
+        user: {},
+        cart: {}
+    }
+
+    componentDidMount() {
+        const id = this.props.match.params.id;
+        axios.get(`/api/user/${id}`).then((res) => {
+            this.setState({user: res.data})
+        })
+    }
+
     render() {
         return (
             <div>
-                Hello from Profile Page
+                <div>
+                    <h1>{this.state.user.name}'s Profile</h1>
+                    <button>Edit</button>
+                </div>
+                <h4>{this.state.user.email}</h4>
+                <h4>{this.state.user.address}</h4>
+                <h4>{this.state.user.city}</h4>
+                <h4>{this.state.user.state}</h4>
+                <h4>{this.state.user.zip_code}</h4>
+                <h4>{this.state.user.phone_number}</h4>
             </div>
         );
     }

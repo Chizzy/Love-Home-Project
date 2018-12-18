@@ -5,7 +5,8 @@
     "fields": {
       "total": 400,
       "quantity": 3,
-      "items": [2, 15, 20]
+      "items": [2, 15, 20],
+      "user": 2
     }
   },
   {
@@ -14,7 +15,8 @@
     "fields": {
       "total": 2450,
       "quantity": 3,
-      "items": [5, 12, 21]
+      "items": [5, 12, 21],
+      "user": 1
     }
   }
 ]
