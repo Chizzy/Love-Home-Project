@@ -63,6 +63,7 @@ class LogInPage extends Component {
                 <UsersStyle>
                      <h1>Select Your Name:</h1>
                      {allUsers}
+                </div>
                 </UsersStyle>
                 <form onSubmit={this.handleSubmit} id="sign-up-form">
                     <div className="header">

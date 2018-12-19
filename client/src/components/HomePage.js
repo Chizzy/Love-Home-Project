@@ -48,7 +48,7 @@ class HomePage extends Component {
 
                 <div className="bigdiv">
                     <div className="hiw">
-                        <img src="http://i64.tinypic.com/359d4qh.png" alt="" />
+                        <img id="firstpic"src="http://i64.tinypic.com/359d4qh.png" alt="" />
                         <center>
                             <p className="stepfont" id="steps1"> 1. Pick Your Design Package</p>
                         </center>

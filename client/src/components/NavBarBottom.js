@@ -23,7 +23,7 @@ const NavBarStyles = styled.div`
   }
 `;
 
-class NavbarTop extends Component {
+class NavBarBottom extends Component {
     render() {
         return (
             <div>
@@ -56,4 +56,4 @@ class NavbarTop extends Component {
     }
 }
 
-export default NavbarTop;
+export default NavBarBottom;

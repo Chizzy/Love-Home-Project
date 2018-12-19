@@ -38,13 +38,22 @@
 .stepfont {
     font-size: 40px;
 }
-
+#firstpic {
+    position: relative;
+    left: 38.9844px;
+    top: -29.2969px;
+}
 #middlepic {
     position: relative;
     left: 40.9844px;
 }
 
+#steps1 {
+    position: relative;
+    top: -31.2969px;
+}
 #steps2 {
     position: relative;
     left: 28.0468px;
 }
+
