@@ -17,7 +17,20 @@ const ItemInfoStyle = styled.div`
 class ItemPage extends Component {
 
     state = {
-        item: {}
+        item: {},
+        cart:{
+            total: 0,
+            quantity: 0,
+            items: []
+        }
+    }
+
+    handleAddToCart = (event) => {
+        event.preventDefault();
+        const cart = this.state.cart.items;
+        console.log(cart);
+        cart.push(this.state.item);
+        console.log(cart)
     }
     
     componentDidMount() {
@@ -38,7 +51,7 @@ class ItemPage extends Component {
                     <h2>{this.state.item.name}</h2>
                     <h3>${this.state.item.price}</h3>
                     <p>{this.state.item.description}</p>
-                    <button type="button" className="btn btn-secondary">Add to Cart</button>
+                    <button type="button" className="btn btn-secondary" id={this.state.item.pk}  onClick={this.handleAddToCart}>Add to Cart</button>
                 </ItemInfoStyle>
             </AboutItemStyle>
         );

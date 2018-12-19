@@ -18,6 +18,7 @@ const ItemStyle = styled.div`
         flex-direction: column;
         text-decoration: none;
         color: black;
+        margin-top: 1rem;
     }
 `;
 
