@@ -15,6 +15,7 @@ import ProfilePage from './components/ProfilePage'
 import ShoppingCartPage from './components/ShoppingCartPage'
 import StorePage from './components/StorePage'
 import {createGlobalStyle} from "styled-components";
+import ThankYouPage from "./components/ThankYouPage";
 
 const Global = createGlobalStyle`
     body {
@@ -45,6 +46,7 @@ class App extends Component {
                         <Route path='/user-profile/:id' component={ProfilePage}/>
                         <Route path='/shopping-cart' component={ShoppingCartPage}/>
                         <Route path='/store' component={StorePage}/>
+                        <Route path='/thank-you' component={ThankYouPage}/>
                         <Route exact path='/' component={HomePage}/>
                     </Switch>
                     <NavBarBottom/>

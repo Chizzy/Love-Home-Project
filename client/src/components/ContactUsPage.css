@@ -27,7 +27,7 @@
 	width: 450px;
 	float: left;
 	left: 50%;
-	position: absolute;
+	position: relative;
 	margin-left: -260px;
 }
 
