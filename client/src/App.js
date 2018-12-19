@@ -9,8 +9,6 @@ import DesignServicesPage from './components/DesignServicesPage'
 import ItemPage from './components/ItemPage';
 import LogInPage from './components/LogInPage';
 import HomePage from './components/HomePage'
-import OrderConfirmationPage from './components/OrderConfirmationPage'
-import OrderReviewPage from './components/OrderReviewPage'
 import ProfilePage from './components/ProfilePage'
 import ShoppingCartPage from './components/ShoppingCartPage'
 import StorePage from './components/StorePage'
@@ -40,8 +38,6 @@ class App extends Component {
                         <Route path='/design-services' component={DesignServicesPage}/>
                         <Route path='/items/:id' component={ItemPage}/>
                         <Route path='/login' component={LogInPage}/>
-                        <Route path='/order-confirmation' component={OrderConfirmationPage}/>
-                        <Route path='/order-review' component={OrderReviewPage}/>
                         <Route path='/user-profile/:id' component={ProfilePage}/>
                         <Route path='/shopping-cart' component={ShoppingCartPage}/>
                         <Route path='/store' component={StorePage}/>

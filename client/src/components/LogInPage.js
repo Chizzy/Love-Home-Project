@@ -30,8 +30,8 @@ class LogInPage extends Component {
     }
 
      handleChange = (event) => {
-        const newUser = { ...this.state.newUser }
-        newUser[event.target.name] = event.target.value
+        const newUser = { ...this.state.newUser };
+        newUser[event.target.name] = event.target.value;
         this.setState({newUser: newUser})
     }
 
