@@ -17,7 +17,9 @@ const ItemInfoStyle = styled.div`
 class ItemPage extends Component {
 
     state = {
-        item: {},
+        item: {
+            price: 0
+        },
         cart:{
             total: 0,
             quantity: 0,
@@ -29,15 +31,18 @@ class ItemPage extends Component {
         event.preventDefault();
         const items = this.state.cart.items;
         items.push(this.state.item);
+        this.setState({quantity: this.state.cart.quantity += 1});
+        this.setState({total: this.state.cart.total += this.state.item.price});
         let cart = {  ...this.state.cart };
         this.setState({cart: cart});
+        console.log(this.state.cart.quantity)
         let saveCart = {  ...this.state.cart };
-        localStorage.setItem("cart", JSON.stringify(saveCart))
+        localStorage.setItem("cart", JSON.stringify(saveCart));
         console.log(this.state.cart)
     }
     
     componentDidMount() {
-        this.updateInput();
+        this.updateStateWithLocalStorage();
         const id = this.props.match.params.id;
         axios.get(`/api/items/${id}`).then((res) => {
             this.setState({item: res.data})
@@ -45,10 +50,17 @@ class ItemPage extends Component {
         })
     }
 
-    updateInput = (cart, updateCart) => {
-    this.setState({ cart: updateCart });
-    localStorage.setItem("cart", updateCart);
-  }
+        updateStateWithLocalStorage = () => {
+        if (localStorage.hasOwnProperty("cart")) {
+            let cart = localStorage.getItem("cart");
+            try {
+                cart = JSON.parse(cart);
+                this.setState({cart: cart})
+            } catch (e) {
+                this.setState({cart: cart})
+            }
+        }
+    }
 
     render() {
         return (

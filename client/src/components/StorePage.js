@@ -35,7 +35,11 @@ class StorePage extends Component {
         search: '',
         category: '',
         selected: false,
-        cart: {}
+        cart: {
+            total: 0,
+            quantity: 0,
+            items: []
+        }
     }
 
     componentDidMount() {
@@ -60,24 +64,22 @@ class StorePage extends Component {
 
     categoryFilter = (event) => {
         const category = event.target.value;
-        this.state.itemList.filter(item => item.category ===  this.setState({category: category}));
+        this.state.itemList.filter(item => item.category === this.setState({category: category}));
         console.log(category)
     }
 
     updateStateWithLocalStorage = () => {
-        for (let cart in this.state.cart) {
-            if (localStorage.hasOwnProperty("cart")) {
-                let cart = localStorage.getItem("cart");
-                try {
-                    cart = JSON.parse(cart);
-                    this.setState({cart: cart})
-                } catch (e) {
-                    this.setState({cart: cart})
-                }
+        if (localStorage.hasOwnProperty("cart")) {
+            let cart = localStorage.getItem("cart");
+            try {
+                cart = JSON.parse(cart)
+                this.setState({cart: cart})
+            } catch (e) {
+                this.setState({cart: cart})
             }
         }
-        console.log(this.state)
     }
+
 
     render() {
         let filteredItems = this.state.itemList.filter(
@@ -89,7 +91,8 @@ class StorePage extends Component {
             <div>
                 <SearchStyle>
                     <div className="col-sm-2">
-                        <input type="text" className="form-rounded form-control" placeholder="Search" value={this.state.search} onChange={this.searchFilter}/>
+                        <input type="text" className="form-rounded form-control" placeholder="Search"
+                               value={this.state.search} onChange={this.searchFilter}/>
                     </div>
                     <div className="dropdown">
                         <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
@@ -97,10 +100,30 @@ class StorePage extends Component {
                             Filter by Style
                         </button>
                         <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <button className={`${this.state.selected ? 'active': null} dropdown-item`} type="button" onClick={(event) => {this.toggleSelected(event); this.categoryFilter(event)}} value="all">All</button>
-                            <button className={`${this.state.selected ? 'active': null} dropdown-item`} type="button" onClick={(event) => {this.toggleSelected(event); this.categoryFilter(event)}} value="modern">Modern</button>
-                            <button className={`${this.state.selected ? 'active': null} dropdown-item`} type="button" onClick={(event) => {this.toggleSelected(event); this.categoryFilter(event)}} value="glam">Glam</button>
-                            <button className={`${this.state.selected ? 'active': null} dropdown-item`} type="button" onClick={(event) => {this.toggleSelected(event); this.categoryFilter(event)}} value="minimalist">Minimalist</button>
+                            <button className={`${this.state.selected ? 'active' : null} dropdown-item`} type="button"
+                                    onClick={(event) => {
+                                        this.toggleSelected(event);
+                                        this.categoryFilter(event)
+                                    }} value="all">All
+                            </button>
+                            <button className={`${this.state.selected ? 'active' : null} dropdown-item`} type="button"
+                                    onClick={(event) => {
+                                        this.toggleSelected(event);
+                                        this.categoryFilter(event)
+                                    }} value="modern">Modern
+                            </button>
+                            <button className={`${this.state.selected ? 'active' : null} dropdown-item`} type="button"
+                                    onClick={(event) => {
+                                        this.toggleSelected(event);
+                                        this.categoryFilter(event)
+                                    }} value="glam">Glam
+                            </button>
+                            <button className={`${this.state.selected ? 'active' : null} dropdown-item`} type="button"
+                                    onClick={(event) => {
+                                        this.toggleSelected(event);
+                                        this.categoryFilter(event)
+                                    }} value="minimalist">Minimalist
+                            </button>
                         </div>
                     </div>
                 </SearchStyle>
@@ -109,7 +132,7 @@ class StorePage extends Component {
                         <ItemStyle key={item.pk}>
                             <Link to={`/items/${item.pk}`}>
                                 <img height="250" width="250" src={item.image_url} alt="item"/>
-                                    <h3>{item.name} ${item.price}</h3>
+                                <h3>{item.name} ${item.price}</h3>
                             </Link>
                         </ItemStyle>
                     ))}
