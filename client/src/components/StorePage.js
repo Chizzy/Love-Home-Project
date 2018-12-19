@@ -34,10 +34,12 @@ class StorePage extends Component {
         itemList: [],
         search: '',
         category: '',
-        selected: false
+        selected: false,
+        cart: {}
     }
 
     componentDidMount() {
+        this.updateStateWithLocalStorage();
         axios.get('/api/items').then((res) => {
             this.setState({itemList: res.data})
         })
@@ -60,6 +62,21 @@ class StorePage extends Component {
         const category = event.target.value;
         this.state.itemList.filter(item => item.category ===  this.setState({category: category}));
         console.log(category)
+    }
+
+    updateStateWithLocalStorage = () => {
+        for (let cart in this.state.cart) {
+            if (localStorage.hasOwnProperty("cart")) {
+                let cart = localStorage.getItem("cart");
+                try {
+                    cart = JSON.parse(cart);
+                    this.setState({cart: cart})
+                } catch (e) {
+                    this.setState({cart: cart})
+                }
+            }
+        }
+        console.log(this.state)
     }
 
     render() {

@@ -27,19 +27,28 @@ class ItemPage extends Component {
 
     handleAddToCart = (event) => {
         event.preventDefault();
-        const cart = this.state.cart.items;
-        console.log(cart);
-        cart.push(this.state.item);
-        console.log(cart)
+        const items = this.state.cart.items;
+        items.push(this.state.item);
+        let cart = {  ...this.state.cart };
+        this.setState({cart: cart});
+        let saveCart = {  ...this.state.cart };
+        localStorage.setItem("cart", JSON.stringify(saveCart))
+        console.log(this.state.cart)
     }
     
     componentDidMount() {
+        this.updateInput();
         const id = this.props.match.params.id;
         axios.get(`/api/items/${id}`).then((res) => {
             this.setState({item: res.data})
             console.log(res.data)
         })
     }
+
+    updateInput = (cart, updateCart) => {
+    this.setState({ cart: updateCart });
+    localStorage.setItem("cart", updateCart);
+  }
 
     render() {
         return (
