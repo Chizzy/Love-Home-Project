@@ -25,7 +25,6 @@ class ContactUsPage extends Component {
                                       id="comment" placeholder="Comment" required></textarea>
                         </p>
 
-
                         <div className="submit">
                             <Link to={"/thank-you"}>
                                 <input type="submit" value="SEND" id="button-green"/>
